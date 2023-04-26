@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: 'SanaSans';
+    font-weight: 600;
+    src: url('../fonts/sansbold.woff2') format('woff2'), url('../fonts/sansbold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSans';
+    font-weight: 600;
+    font-style: italic;
+    src: url('../fonts/sansbolditalic.woff2') format('woff2'), url('../fonts/sansbolditalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSansAlt';
+    font-weight: 600;
+    src: url('../fonts/altbold.eot');
+    src: url('../fonts/altbold.woff2') format('woff2'), url('../fonts/altbold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSansAlt';
+    font-weight: 600;
+    font-style: italic;
+    src: url('../fonts/altbolditalic.eot');
+    src: url('../fonts/altbolditalic.woff2') format('woff2'), url('../fonts/altbolditalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSansAlt';
+    font-style: italic;
+    src: url('../fonts/altitalic.eot');
+    src: url('../fonts/altitalic.woff2') format('woff2'), url('../fonts/altitalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSans';
+    font-style: italic;
+    src: url('../fonts/sansitalic.eot');
+    src: url('../fonts/sansitalic.woff2') format('woff2'), url('../fonts/sansitalic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSans';
+    src: url('../fonts/sansregular.eot');
+    src: url('../fonts/sansregular.woff2') format('woff2'), url('../fonts/sansregular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSansAlt';
+    src: url('../fonts/altregular.eot');
+    src: url('../fonts/altregular.woff2') format('woff2'), url('../fonts/altregular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SanaSansAlt';
+    font-weight: 500;
+    src: url('../fonts/altmedium.eot');
+    src: url('../fonts/altmedium.woff2') format('woff2'), url('../fonts/altmedium.woff') format('woff');
+    font-display: swap;
+}
+
+
+:root {
+    --md-text-font: "SanaSansAlt";
+}

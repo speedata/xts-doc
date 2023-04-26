@@ -1,0 +1,15 @@
+
+
+html {
+    font-size: 18pt;
+}
+
+.md-typeset dd {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+.md-typeset dd p {
+    margin-top: 0em;
+}
+

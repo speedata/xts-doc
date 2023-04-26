@@ -1,0 +1,133 @@
+site_name: XTS documentation
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - navigation.top
+    - navigation.instant
+    - navigation.footer
+  font: false
+  logo: assets/logo.png
+
+nav:
+  - Home: index.md
+  - Introduction:
+    - About XTS: introduction/index.md
+    - Hello, world!: introduction/helloworld.md
+  - Manual:
+    - XPath and layout functions: manual/xpath.md
+    - Command line: manual/commandline.md
+    - Configuration file: manual/configuration.md
+  - Reference:
+    - Overview: reference/index.md
+    - A: reference/a.md
+    - Action: reference/action.md
+    - AtPageCreation: reference/atpagecreation.md
+    - AtPageShipout: reference/atpageshipout.md
+    - Attribute: reference/attribute.md
+    - B: reference/b.md
+    - Barcode: reference/barcode.md
+    - Bold: reference/bold.md
+    - BoldItalic: reference/bolditalic.md
+    - Bookmark: reference/bookmark.md
+    - Box: reference/box.md
+    - Br: reference/br.md
+    - Case: reference/case.md
+    - Circle: reference/circle.md
+    - Clearpage: reference/clearpage.md
+    - Column: reference/column.md
+    - Columns: reference/columns.md
+    - Contents: reference/contents.md
+    - CopyOf: reference/copy_of.md
+    - DefineColor: reference/definecolor.md
+    - DefineFontfamily: reference/definefontfamily.md
+    - DefineFontsize: reference/definefontsize.md
+    - DefineMasterpage: reference/definemasterpage.md
+    - DefineTextformat: reference/definetextformat.md
+    - Element: reference/element.md
+    - ForAll: reference/forall.md
+    - Group: reference/group.md
+    - I: reference/i.md
+    - Image: reference/image.md
+    - Index: reference/index.md
+    - Italic: reference/italic.md
+    - Layout: reference/layout.md
+    - Loaddataset: reference/loaddataset.md
+    - Loadfontfile: reference/loadfontfile.md
+    - Loop: reference/loop.md
+    - Mark: reference/mark.md
+    - Message: reference/message.md
+    - NextFrame: reference/nextframe.md
+    - NextRow: reference/nextrow.md
+    - Options: reference/options.md
+    - Otherwise: reference/otherwise.md
+    - Pageformat: reference/pageformat.md
+    - Paragraph: reference/paragraph.md
+    - PDFOptions: reference/pdfoptions.md
+    - PlaceObject: reference/placeobject.md
+    - PositioningArea: reference/positioningarea.md
+    - PositioningFrame: reference/positioningframe.md
+    - ProcessNode: reference/processnode.md
+    - Record: reference/record.md
+    - Regular: reference/regular.md
+    - SaveDataset: reference/savedataset.md
+    - SetGrid: reference/setgrid.md
+    - SetVariable: reference/setvariable.md
+    - Span: reference/span.md
+    - Stylesheet: reference/stylesheet.md
+    - Switch: reference/switch.md
+    - Table: reference/table.md
+    - Td: reference/td.md
+    - Textblock: reference/textblock.md
+    - Tr: reference/tr.md
+    - Trace: reference/trace.md
+    - Value: reference/value.md
+
+
+repo_url: https://github.com/speedata/xts
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - attr_list
+  - def_list
+  - toc:
+        permalink: "#"
+
+plugins:
+  - glightbox
+  - include-markdown
+  - search:
+      lang: en
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/monofont.css
+  # - stylesheets/sansfont.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://typo.social/@speedata
+  analytics:
+    # provider: custom
+
+copyright: Copyright 2023 speedata GmbH, Berlin (Germany)
+
+# pip3 install mkdocs
+# pip3 install mkdocs-material
+# pip3 install mkdocs-glightbox
+# pip3 install mkdocs-include-markdown-plugin
+

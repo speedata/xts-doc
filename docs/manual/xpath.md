@@ -55,19 +55,89 @@ All other attributes in the layout file allow a temporary XPath mode using curly
 
 ## Layout functions
 
-* `current-page`
-* `current-row`
-* `dummytext`
-* `even`
-* `file-exists`
-* `group-height`
-* `group-width`
-* `last-page-number`
-* `number-of-columns`
-* `number-of-rows`
-* `odd`
-* `page-number`
-* `roman-numeral`
+The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en`.
+
+`sd:current-page()`
+:   Return the current page number.
+
+`sd:current-row()`
+:    Return current row within the the area.
+
+    | Argument | Type   | Optional | Description                                            |
+    | -------- | ------ | -------- | ------------------------------------------------------ |
+    | area     | string | yes      | The name of the area. It defaults to the default area. |
+
+
+`sd:dummytext()`
+:    Create a lorem ipsum text which is useful for debugging.
+
+`sd:even()`
+:    Return true if the given number is even.
+
+    | Argument | Type   | Optional | Description                                  |
+    | -------- | ------ | -------- | -------------------------------------------- |
+    | number   | number | no       | Return true if the number is an even number. |
+
+`sd:file-exists()`
+:     Return true if the file exists.
+
+    | Argument | Type   | Optional | Description                                                                      |
+    | -------- | ------ | -------- | -------------------------------------------------------------------------------- |
+    | filename | string | no       | If the filename is not a full path to the file, the known searching rules apply. |
+
+`sd:group-height()`
+:   Return the height of a group.
+
+    | Argument   | Type   | Optional | Description                                            |
+    | ---------- | ------ | -------- | ------------------------------------------------------ |
+    | group name | string | no       | Return the height of the group in grid cells.          |
+    | unit       | string | yes      | Return the height of the group in the amount of units. |
+
+    Example: `sd:group-height('mygroup','cm')` could return `2.74`.
+
+`sd:group-width()`
+:   Return the width of a group. See `sd:group-height()` for a description.
+
+`sd:last-page-number()`
+:   Return the last page number of the document. This actually returns the number of pages of the previous run, so it might not be accurate if the number of pages changes in a subsequent run.
+
+`sd:number-of-columns()`
+:   Return the width of an area in grid cells.
+
+    | Argument | Type   | Optional | Description                                            |
+    | -------- | ------ | -------- | ------------------------------------------------------ |
+    | area     | string | yes      | The name of the area. It defaults to the default area. |
+
+
+`sd:number-of-rows()`
+:   Return the height of an area in grid cells.
+
+    | Argument | Type   | Optional | Description                                            |
+    | -------- | ------ | -------- | ------------------------------------------------------ |
+    | area     | string | yes      | The name of the area. It defaults to the default area. |
+
+`sd:odd()`
+:    Return true if the argument is odd.
+
+    | Argument | Type   | Optional | Description                                 |
+    | -------- | ------ | -------- | ------------------------------------------- |
+    | number   | number | no       | Return true if the number is an odd number. |
+
+`sd:page-number()`
+:    Return the page number of a marker.
+
+    | Argument | Type   | Optional | Description                                                                                                    |
+    | -------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------- |
+    | name     | string | no       | Return page number of a marker. The marker has to be defined with the command [`<Mark>`](../reference/mark.md) |
+
+`sd:roman-numeral()`
+:    Return a number as a roman numeral.
+
+    | Argument | Type   | Optional | Description                  |
+    | -------- | ------ | -------- | ---------------------------- |
+    | number   | number | no       | a number as a roman numeral. |
+
+    Example: `sd:roman-numeral(13)` returns the string `XIII`.
 
 
 ## XPath functions

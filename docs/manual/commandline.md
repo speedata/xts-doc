@@ -29,7 +29,7 @@ $ xts <Command> <Parameter> <Parameter> ...
 
 
 `-c, --config=NAME`
-:   Read the config file with the given NAME. Default: 'publisher.cfg'
+:   Read the config file with the given NAME. Default: 'xts.cfg'
 
 `--data=NAME`
 :   Name of the data file. Defaults to 'data.xml'
@@ -44,7 +44,7 @@ $ xts <Command> <Parameter> <Parameter> ...
 :   Run Lua process before the publishing run
 
 `--jobname=NAME`
-:   The name of the resulting PDF file (without extension), default is 'publisher'
+:   The name of the resulting PDF file (without extension), default is 'xts'
 
 `--layout=NAME`
 :   Name of the layout file. Defaults to 'layout.xml'

@@ -8,7 +8,7 @@ Td wraps a table cell, just like HTML.
 
 ##  Child elements
 
-[Bookmark](../bookmark.md), [Box](../box.md), [Copy-of](../copy_of.md), [ForAll](../forall.md), [Image](../image.md), [Loop](../loop.md), [Paragraph](../paragraph.md), [Switch](../switch.md), [Table](../table.md)
+[Bookmark](../bookmark.md), [Box](../box.md), [ForAll](../forall.md), [Image](../image.md), [Loop](../loop.md), [Paragraph](../paragraph.md), [Switch](../switch.md), [Table](../table.md), [Value](../value.md)
 
 ##  Parent elements
 

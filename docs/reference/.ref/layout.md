@@ -8,7 +8,7 @@ This command is the root element in the Layout instructions.
 
 ##  Child elements
 
-[DefineColor](../definecolor.md), [DefineFontfamily](../definefontfamily.md), [DefineFontsize](../definefontsize.md), [DefineMasterpage](../definemasterpage.md), [DefineTextformat](../definetextformat.md), [LoadFontfile](../loadfontfile.md), [Message](../message.md), [Options](../options.md), [PDFOptions](../pdfoptions.md), [Pageformat](../pageformat.md), [Record](../record.md), [SetGrid](../setgrid.md), [SetVariable](../setvariable.md), [Stylesheet](../stylesheet.md), [Trace](../trace.md)
+[DefineColor](../definecolor.md), [DefineFontfamily](../definefontfamily.md), [DefineFontsize](../definefontsize.md), [DefineMasterpage](../definemasterpage.md), [DefineTextformat](../definetextformat.md), [Function](../function.md), [LoadFontfile](../loadfontfile.md), [Message](../message.md), [Options](../options.md), [PDFOptions](../pdfoptions.md), [Pageformat](../pageformat.md), [Record](../record.md), [SetGrid](../setgrid.md), [SetVariable](../setvariable.md), [Stylesheet](../stylesheet.md), [Trace](../trace.md)
 
 ##  Parent elements
 

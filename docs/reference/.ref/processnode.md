@@ -12,7 +12,7 @@ Executes all given nodes. The elements, that are to be executed, are given with 
 
 ##  Parent elements
 
-[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Contents](../contents.md), [Record](../record.md)
+[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Contents](../contents.md), [Function](../function.md), [Record](../record.md)
 
 
 ## Attributes

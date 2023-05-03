@@ -118,6 +118,7 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
     | pdf box     | string  | yes      | One of the PDF boxes: `artbox`, `cropbox`, `bleedbox`, `trimbox` `mediabox`. This defaults to the `mediabox`. Only useful when the first argument is a PDF file |
     | unit       | string | yes      | Return the height/width of the image in the amount of units instead of grid cells. |
 
+The image dimensions are rather meaningless when the image is a bitmap file (PNG or a JPEG). XTS assumes a PPI (pixels per inch) value of 96. So a 960 pixel wide image has a width of 10 inch or 254 mm. XTS does not extract the PPI values from the image itself.
 
 
 

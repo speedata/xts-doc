@@ -8,11 +8,11 @@ Create a rectangular piece of text.
 
 ##  Child elements
 
-[Action](../action.md), [Bookmark](../bookmark.md), [Copy-of](../copy_of.md), [Paragraph](../paragraph.md)
+[Action](../action.md), [Bookmark](../bookmark.md), [Paragraph](../paragraph.md), [Value](../value.md)
 
 ##  Parent elements
 
-[PlaceObject](../placeobject.md)
+[PlaceObject](../placeobject.md), [SetVariable](../setvariable.md)
 
 
 ## Attributes

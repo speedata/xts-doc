@@ -8,7 +8,7 @@ Set the widths and other properties of the columns in a table.
 
 ##  Child elements
 
-[Column](../column.md), [Copy-of](../copy_of.md), [ForAll](../forall.md), [Loop](../loop.md), [Switch](../switch.md)
+[Column](../column.md), [ForAll](../forall.md), [Loop](../loop.md), [Switch](../switch.md), [Value](../value.md)
 
 ##  Parent elements
 

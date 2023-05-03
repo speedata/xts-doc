@@ -12,7 +12,7 @@ Repeat the contents of this element several times.
 
 ##  Parent elements
 
-[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Columns](../columns.md), [Contents](../contents.md), [ForAll](../forall.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md), [SaveDataset](../savedataset.md), [Td](../td.md), [Tr](../tr.md)
+[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Columns](../columns.md), [Contents](../contents.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md), [SaveDataset](../savedataset.md), [Td](../td.md), [Tr](../tr.md)
 
 
 ## Attributes

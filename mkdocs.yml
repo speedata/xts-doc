@@ -21,6 +21,9 @@ nav:
     - XPath and layout functions: manual/xpath.md
     - Command line: manual/commandline.md
     - Configuration file: manual/configuration.md
+    - Programming:
+      - Introduction: manual/index.md
+      - Functions: manual/functions.md
   - Reference:
     - Overview: reference/index.md
     - A: reference/a.md
@@ -41,7 +44,6 @@ nav:
     - Column: reference/column.md
     - Columns: reference/columns.md
     - Contents: reference/contents.md
-    - CopyOf: reference/copy_of.md
     - DefineColor: reference/definecolor.md
     - DefineFontfamily: reference/definefontfamily.md
     - DefineFontsize: reference/definefontsize.md
@@ -49,6 +51,7 @@ nav:
     - DefineTextformat: reference/definetextformat.md
     - Element: reference/element.md
     - ForAll: reference/forall.md
+    - Function: reference/function.md
     - Group: reference/group.md
     - I: reference/i.md
     - Image: reference/image.md
@@ -66,6 +69,7 @@ nav:
     - Otherwise: reference/otherwise.md
     - Pageformat: reference/pageformat.md
     - Paragraph: reference/paragraph.md
+    - Param: reference/param.md
     - PDFOptions: reference/pdfoptions.md
     - PlaceObject: reference/placeobject.md
     - PositioningArea: reference/positioningarea.md

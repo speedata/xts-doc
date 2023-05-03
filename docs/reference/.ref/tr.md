@@ -8,7 +8,7 @@ Tablerow
 
 ##  Child elements
 
-[Copy-of](../copy_of.md), [ForAll](../forall.md), [Loop](../loop.md), [Message](../message.md), [Switch](../switch.md), [Td](../td.md)
+[ForAll](../forall.md), [Loop](../loop.md), [Message](../message.md), [Switch](../switch.md), [Td](../td.md), [Value](../value.md)
 
 ##  Parent elements
 

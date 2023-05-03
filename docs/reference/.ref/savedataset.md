@@ -8,11 +8,11 @@ Saves an element/attribute structure to be used in the next publisher run. The c
 
 ##  Child elements
 
-[Copy-of](../copy_of.md), [Element](../element.md), [ForAll](../forall.md), [Loop](../loop.md)
+[Element](../element.md), [ForAll](../forall.md), [Loop](../loop.md), [Value](../value.md)
 
 ##  Parent elements
 
-[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Contents](../contents.md), [ForAll](../forall.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md)
+[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Contents](../contents.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md)
 
 
 ## Attributes

@@ -8,11 +8,11 @@ Create a table that is similar to the HTML table model.
 
 ##  Child elements
 
-[Columns](../columns.md), [Copy-of](../copy_of.md), [Tr](../tr.md)
+[Columns](../columns.md), [Tr](../tr.md), [Value](../value.md)
 
 ##  Parent elements
 
-[PlaceObject](../placeobject.md), [Td](../td.md)
+[PlaceObject](../placeobject.md), [SetVariable](../setvariable.md), [Td](../td.md)
 
 
 ## Attributes

@@ -8,11 +8,11 @@ Outputs a rectangular object (image, table, box, barcode or textblock).
 
 ##  Child elements
 
-[Barcode](../barcode.md), [Box](../box.md), [Circle](../circle.md), [Image](../image.md), [Table](../table.md), [Textblock](../textblock.md)
+[Barcode](../barcode.md), [Box](../box.md), [Circle](../circle.md), [Image](../image.md), [Table](../table.md), [Textblock](../textblock.md), [Value](../value.md)
 
 ##  Parent elements
 
-[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Contents](../contents.md), [ForAll](../forall.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md)
+[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Contents](../contents.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md)
 
 
 ## Attributes

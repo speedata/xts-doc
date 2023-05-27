@@ -12,7 +12,7 @@ Insert a newline
 
 ##  Parent elements
 
-[A](../a.md), [B](../b.md), [I](../i.md), [Paragraph](../paragraph.md), [Span](../span.md)
+[A](../a.md), [B](../b.md), [I](../i.md), [Paragraph](../paragraph.md), [Span](../span.md), [U](../u.md)
 
 
 ## Attributes

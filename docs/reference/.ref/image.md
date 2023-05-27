@@ -67,6 +67,37 @@ Includes an external Graphic. Allowed graphic formats are PDF (.pdf), PNG (.png)
 
 
 
+`visiblebox` (optional)
+:   The PDF box that represents the visible area of the included image. Default is “cropbox”.
+
+
+
+    `artbox`
+    :    Use the artbox as the visible area. The artbox is usually not contained in a PDF.
+
+
+
+    `bleedbox`
+    :    Use the bleedbox of the included PDF.
+
+
+
+    `cropbox`
+    :    Use the cropbox of the included PDF (default).
+
+
+
+    `mediabox`
+    :    Use the mediabox of the included PDF. This is the largest box.
+
+
+
+    `trimbox`
+    :    Use the trimbox of the includes PDF. The trimbox is the final paper size. For example, the trim box of an A4 PDF is 210mm x 297mm.
+
+
+
+
 `width` (number or length, optional)
 :   Image width. One of 'auto' (default, take image width), '100%' (whole area width), length (such as '3cm') or number (in grid cells).
 

@@ -8,7 +8,7 @@ Repeat the contents of this element several times.
 
 ##  Child elements
 
-[ClearPage](../clearpage.md), [LoadDataset](../loaddataset.md), [Loop](../loop.md), [Message](../message.md), [NextFrame](../nextframe.md), [NextRow](../nextrow.md), [PlaceObject](../placeobject.md), [SaveDataset](../savedataset.md), [Switch](../switch.md)
+[ClearPage](../clearpage.md), [Column](../column.md), [LoadDataset](../loaddataset.md), [Loop](../loop.md), [Message](../message.md), [NextFrame](../nextframe.md), [NextRow](../nextrow.md), [Paragraph](../paragraph.md), [PlaceObject](../placeobject.md), [SaveDataset](../savedataset.md), [Switch](../switch.md)
 
 ##  Parent elements
 

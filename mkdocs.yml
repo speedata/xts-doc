@@ -87,6 +87,7 @@ nav:
     - Td: reference/td.md
     - Textblock: reference/textblock.md
     - Tr: reference/tr.md
+    - U: reference/u.md
     - Trace: reference/trace.md
     - Value: reference/value.md
 

@@ -16,6 +16,9 @@ $ xts <Command> <Parameter> <Parameter> ...
 `clean`
 :   Remove auxiliary and protocol files
 
+`doc`
+:   Open the documentation in a web browser (Linux, Windows, macOS)
+
 `list-fonts`
 :    List available fonts
 

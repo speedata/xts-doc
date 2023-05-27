@@ -1,8 +1,8 @@
-# I
+# U
 
 
 
-Switch to italic text.
+Underline text.
 
 
 
@@ -21,13 +21,12 @@ Switch to italic text.
 ## Example
 
 ```xml
-<PlaceObject>
-  <Textblock>
-    <Paragraph>
-      <I><Value>Italic text</Value></I>
-    </Paragraph>
-  </Textblock>
-</PlaceObject>
+<Textblock>
+  <Paragraph>
+    <U><Value>underlined text</Value></U>
+  </Paragraph>
+</Textblock>
+
 ```
 
 

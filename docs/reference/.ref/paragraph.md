@@ -8,11 +8,11 @@ Insert a paragraph of text. The width of the paragraph is inherited from the sur
 
 ##  Child elements
 
-[A](../a.md), [Action](../action.md), [B](../b.md), [Br](../br.md), [I](../i.md), [Span](../span.md), [Value](../value.md)
+[A](../a.md), [Action](../action.md), [B](../b.md), [Br](../br.md), [I](../i.md), [Span](../span.md), [U](../u.md), [Value](../value.md)
 
 ##  Parent elements
 
-[SetVariable](../setvariable.md), [Td](../td.md), [Textblock](../textblock.md)
+[Case](../case.md), [ForAll](../forall.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [SetVariable](../setvariable.md), [Td](../td.md), [Textblock](../textblock.md)
 
 
 ## Attributes

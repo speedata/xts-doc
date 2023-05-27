@@ -12,7 +12,7 @@ Set the widths and other properties of the columns in a table.
 
 ##  Parent elements
 
-[Table](../table.md)
+[Function](../function.md), [Table](../table.md)
 
 
 ## Attributes

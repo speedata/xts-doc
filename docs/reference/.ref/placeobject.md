@@ -41,8 +41,26 @@ Outputs a rectangular object (image, table, box, barcode or textblock).
 
 
 
+`background` (yes or no, optional)
+:   Fill the background of the object with a color, given by backgroundcolor.
+
+
+
+
+`backgroundcolor` (text, optional)
+:   Color of the background if “background” is set to “yes”.
+
+
+
+
 `column` (number or length, optional)
 :   If contents is a number: the grid cell from the left margin of the area. If it is a length: the absolute position from the left paper margin. If this attribute is omitted, the system tries to place the object by itself.
+
+
+
+
+`frame` (yes or no, optional)
+:   Draw a frame around the object.
 
 
 

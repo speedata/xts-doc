@@ -12,7 +12,7 @@ Set the properties of a column in the table.
 
 ##  Parent elements
 
-[Case](../case.md), [Columns](../columns.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md)
+[Case](../case.md), [Columns](../columns.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Until](../until.md), [While](../while.md)
 
 
 ## Attributes

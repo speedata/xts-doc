@@ -8,11 +8,11 @@ Associates a value with a variable name. The value can be a simple value or a mo
 
 ##  Child elements
 
-[Element](../element.md), [Paragraph](../paragraph.md), [Table](../table.md), [Textblock](../textblock.md), [Value](../value.md)
+[Element](../element.md), [Paragraph](../paragraph.md), [Table](../table.md), [Textblock](../textblock.md), [Until](../until.md), [Value](../value.md), [While](../while.md)
 
 ##  Parent elements
 
-[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Contents](../contents.md), [Function](../function.md), [Layout](../layout.md), [Record](../record.md)
+[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Contents](../contents.md), [ForAll](../forall.md), [Function](../function.md), [Layout](../layout.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md), [Until](../until.md), [While](../while.md)
 
 
 ## Attributes

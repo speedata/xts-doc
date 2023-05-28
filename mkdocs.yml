@@ -22,8 +22,8 @@ nav:
     - Command line: manual/commandline.md
     - Configuration file: manual/configuration.md
     - Programming:
-      - Introduction: manual/index.md
-      - Functions: manual/functions.md
+      - Introduction: manual/programming/index.md
+      - Functions: manual/programming/functions.md
   - Reference:
     - Overview: reference/index.md
     - A: reference/a.md
@@ -88,8 +88,10 @@ nav:
     - Textblock: reference/textblock.md
     - Tr: reference/tr.md
     - U: reference/u.md
+    - Until: reference/until.md
     - Trace: reference/trace.md
     - Value: reference/value.md
+    - While: reference/while.md
 
 
 repo_url: https://github.com/speedata/xts

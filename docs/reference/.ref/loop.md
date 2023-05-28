@@ -8,11 +8,11 @@ Repeat the contents of this element several times.
 
 ##  Child elements
 
-[ClearPage](../clearpage.md), [Column](../column.md), [LoadDataset](../loaddataset.md), [Loop](../loop.md), [Message](../message.md), [NextFrame](../nextframe.md), [NextRow](../nextrow.md), [Paragraph](../paragraph.md), [PlaceObject](../placeobject.md), [SaveDataset](../savedataset.md), [Switch](../switch.md)
+[ClearPage](../clearpage.md), [Column](../column.md), [LoadDataset](../loaddataset.md), [Loop](../loop.md), [Message](../message.md), [NextFrame](../nextframe.md), [NextRow](../nextrow.md), [Paragraph](../paragraph.md), [PlaceObject](../placeobject.md), [SaveDataset](../savedataset.md), [SetVariable](../setvariable.md), [Switch](../switch.md), [Until](../until.md), [Value](../value.md), [While](../while.md)
 
 ##  Parent elements
 
-[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Columns](../columns.md), [Contents](../contents.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md), [SaveDataset](../savedataset.md), [Td](../td.md), [Tr](../tr.md)
+[AtPageCreation](../atpagecreation.md), [AtPageShipout](../atpageshipout.md), [Case](../case.md), [Columns](../columns.md), [Contents](../contents.md), [ForAll](../forall.md), [Function](../function.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [Record](../record.md), [SaveDataset](../savedataset.md), [Td](../td.md), [Tr](../tr.md), [Until](../until.md), [While](../while.md)
 
 
 ## Attributes

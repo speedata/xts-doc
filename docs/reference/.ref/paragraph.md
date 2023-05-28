@@ -12,7 +12,7 @@ Insert a paragraph of text. The width of the paragraph is inherited from the sur
 
 ##  Parent elements
 
-[Case](../case.md), [ForAll](../forall.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [SetVariable](../setvariable.md), [Td](../td.md), [Textblock](../textblock.md)
+[Case](../case.md), [ForAll](../forall.md), [Loop](../loop.md), [Otherwise](../otherwise.md), [SetVariable](../setvariable.md), [Td](../td.md), [Textblock](../textblock.md), [Until](../until.md), [While](../while.md)
 
 
 ## Attributes

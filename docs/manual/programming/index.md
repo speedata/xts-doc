@@ -5,6 +5,12 @@ Certainly the most important feature of the Publisher is the ability to implemen
 !!! note "execution time"
     The program execution runs simultaneously with the creation of the PDF. Therefore, the speedata Publisher can react very flexibly to the input data. Queries such as “Is there still enough space for this object?” are thus possible. This distinguishes the Publisher from other software for creating PDF files. Basic programming knowledge is required to use the full functionality of the Publisher. The programming language has been kept as simple as possible to maintain the readability of the layout.
 
+## Two programming levels
+
+There are two programming levels. The more global one is on the layout XML level and uses constructs such as `<SetVariable>` or `<Loop>`. This is called the XTS layout language or the host language. There is another level called XPath, which is more locally focused and used within attributes from the host language. For example the the switch/case command has an attribute called `test` which expects an XPath language expression that evaluates to `true()` or to `false()`. In contrast to the host language, XPath is a well-known language that is used, for example, in XSLT.
+
+This chapter describes the XTS layout language. For an introduction to XPath see for example the one at [W3Schools](https://www.w3schools.com/xml/xpath_intro.asp).
+
 ## Variables
 
 All variables are globally visible. This means that a variable never becomes invalid (except in [functions](functions.md)). Here’s an example:
@@ -17,11 +23,15 @@ All variables are globally visible. This means that a variable never becomes inv
         <Record element="data">
             <ProcessNode select="article" />
             <!--
-                <Message> is executed after all child
-                elements 'article' are visited. The
-                variable 'no' gets set to 1,2 and 3
-                respectively in each call of the
-                <Record element="article"> command.
+                At this point all child elements from “article”
+                have been visited by executing the previous
+                command (<ProcessNode>).
+                The variable 'no' gets set
+                to 1,2 and 3 respectively in each call of the
+                corresponding <Record element="article"> command.
+
+                When the next command (<Message>) is executed,
+                all child elements 'article' are visited.
                 The global variable 'no' is now set to 3:
             -->
             <Message select="$no" />
@@ -43,7 +53,7 @@ All variables are globally visible. This means that a variable never becomes inv
     ~~~
 
 
-The output of the command [`<Message>`](../../reference/message.md) is 3. If the variable nr was declared with local visibility, it could not be read in the data element.
+The output of the command [`<Message>`](../../reference/message.md) is 3. If the variable `no` was declared with local visibility, it could not be read in the data element.
 
 The global visibility is necessary because the program execution in the layout sometimes “jumps back and forth”. At the end of the page the content of [`<AtPageShipout>`](../../reference/atpageshipout.md) is executed in the current page type. It must also be possible to access the variables there.
 
@@ -168,22 +178,6 @@ This also works for more complex XML structures:
 
 <!-- An example of copy of in practice is the assembly of XML structures with which information can be stored. This example is described in detail in the Cookbook, there in the section Create directories (XML structure). -->
 
-## If-then-else
-
-In XPath you can perform simple if-then queries. The syntax for this is if (condition) then ...​ else ...:
-
-~~~xml
-<PlaceObject>
-  <Textblock>
-    <Paragraph>
-      <Value select="
-        if (sd:odd(sd:current-page()))
-           then 'recto' else 'verso'"/>
-    </Paragraph>
-  </Textblock>
-</PlaceObject>
-~~~
-
 
 ## Case distinctions
 
@@ -218,7 +212,7 @@ There are various loops in the speedata Publisher. The simple variant is `<Loop>
 
 This loop is run through 10 times.
 
-This command executes the enclosed commands as many times as the expression in select results in. The loop counter is stored in the variable _loopcounter, unless otherwise set by `variable="…​"`.
+This command executes the enclosed commands as many times as the expression in select results in. The loop counter is stored in the variable `_loopcounter`, unless otherwise set by `variable="..."`.
 
 Besides the simple loop there are also loops with conditions:
 

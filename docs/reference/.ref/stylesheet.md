@@ -25,22 +25,6 @@ Load a CSS file or define CSS rules
 
 
 
-`scope` ()
-:   Set the scope of the css rules. Can be `layout` or `data`.
-
-
-
-    `layout`
-    :    The CSS rules apply to the commands in the layout XML file.
-
-
-
-    `data`
-    :    The CSS rules apply to the elements in the data file.
-
-
-
-
 ## Remarks
 If no filename is given, the speedata Publisher expects the CSS rules as the contents of this element.
 

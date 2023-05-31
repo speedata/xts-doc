@@ -38,7 +38,7 @@ $ xts <Command> <Parameter> <Parameter> ...
 :   Name of the data file. Defaults to 'data.xml'
 
 `--dummy`
-:   Don't read a data file, use '<data />' as input
+:   Don't read a data file, use '`<data />`' as input
 
 `--dumpoutput=FILENAME`
 :   Complete XML dump of generated PDF file

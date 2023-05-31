@@ -8,7 +8,7 @@ Insert a paragraph of text. The width of the paragraph is inherited from the sur
 
 ##  Child elements
 
-[A](../a.md), [Action](../action.md), [B](../b.md), [Br](../br.md), [I](../i.md), [Span](../span.md), [U](../u.md), [Value](../value.md)
+[A](../a.md), [Action](../action.md), [B](../b.md), [Br](../br.md), [I](../i.md), [Ol](../ol.md), [Span](../span.md), [U](../u.md), [Ul](../ul.md), [Value](../value.md)
 
 ##  Parent elements
 
@@ -16,6 +16,12 @@ Insert a paragraph of text. The width of the paragraph is inherited from the sur
 
 
 ## Attributes
+
+
+
+`class` (text, optional)
+:   CSS class for this element.
+
 
 
 
@@ -33,6 +39,12 @@ Insert a paragraph of text. The width of the paragraph is inherited from the sur
 
 `fontfamily` (text, optional, "CSS property": font-family)
 :   The name of the font family for the paragraph. The default is “text” (lowercase t).
+
+
+
+
+`id` (text, optional)
+:   CSS id for this element.
 
 
 

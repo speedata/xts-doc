@@ -1,8 +1,8 @@
-# I
+# Li
 
 
 
-Switch to italic text.
+List item in an ordered or unordered list.
 
 
 
@@ -12,7 +12,7 @@ Switch to italic text.
 
 ##  Parent elements
 
-[A](../a.md), [B](../b.md), [I](../i.md), [Li](../li.md), [Paragraph](../paragraph.md), [Span](../span.md), [U](../u.md)
+[Ol](../ol.md), [Ul](../ul.md)
 
 
 ## Attributes
@@ -24,10 +24,15 @@ Switch to italic text.
 <PlaceObject>
   <Textblock>
     <Paragraph>
-      <I><Value>Italic text</Value></I>
+      <Ol>
+        <Li><Value>First item</Value></Li>
+        <Li><Value>Second item</Value></Li>
+        <Li><Value>Third item</Value></Li>
+      </Ol>
     </Paragraph>
   </Textblock>
 </PlaceObject>
+
 ```
 
 

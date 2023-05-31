@@ -24,6 +24,7 @@ nav:
     - Programming:
       - Introduction: manual/programming/index.md
       - Functions: manual/programming/functions.md
+    - Defaults: manual/defaults.md
   - Reference:
     - Overview: reference/index.md
     - A: reference/a.md
@@ -45,6 +46,7 @@ nav:
     - Columns: reference/columns.md
     - Contents: reference/contents.md
     - DefineColor: reference/definecolor.md
+    - DefineFontalias: reference/definefontalias.md
     - DefineFontfamily: reference/definefontfamily.md
     - DefineFontsize: reference/definefontsize.md
     - DefineMasterpage: reference/definemasterpage.md
@@ -58,6 +60,7 @@ nav:
     - Index: reference/index.md
     - Italic: reference/italic.md
     - Layout: reference/layout.md
+    - Li: reference/li.md
     - Loaddataset: reference/loaddataset.md
     - Loadfontfile: reference/loadfontfile.md
     - Loop: reference/loop.md
@@ -65,6 +68,7 @@ nav:
     - Message: reference/message.md
     - NextFrame: reference/nextframe.md
     - NextRow: reference/nextrow.md
+    - Ol: reference/ol.md
     - Options: reference/options.md
     - Otherwise: reference/otherwise.md
     - Pageformat: reference/pageformat.md
@@ -88,6 +92,7 @@ nav:
     - Textblock: reference/textblock.md
     - Tr: reference/tr.md
     - U: reference/u.md
+    - Ul: reference/ul.md
     - Until: reference/until.md
     - Trace: reference/trace.md
     - Value: reference/value.md

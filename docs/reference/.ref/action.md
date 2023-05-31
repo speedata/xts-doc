@@ -12,7 +12,7 @@ Associates an action with a text. Once the text is placed on the page, the assoc
 
 ##  Parent elements
 
-[A](../a.md), [B](../b.md), [I](../i.md), [Paragraph](../paragraph.md), [Span](../span.md), [Textblock](../textblock.md), [U](../u.md)
+[A](../a.md), [B](../b.md), [I](../i.md), [Li](../li.md), [Paragraph](../paragraph.md), [Span](../span.md), [Textblock](../textblock.md), [U](../u.md)
 
 
 ## Attributes

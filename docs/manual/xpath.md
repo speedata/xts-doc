@@ -88,12 +88,22 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
     | -------- | ------ | -------- | ------------------------------------------------------ |
     | area     | string | yes      | The name of the area. It defaults to the default area. |
 
+`sd:decode-base64()`
+:   Decode a string with base64 encoding.
+
+    | Argument | Type   | Optional | Description              |
+    | -------- | ------ | -------- | ------------------------ |
+    | data     | string | no       | The base64 encoded data. |
+
+    The base64 encoded data which has to be stored in a string gets converted into a byte array. Useful for including images stored in the data file. See `sd:file-contents()` and the [base64 example](https://github.com/speedata/xts-examples/tree/main/technical/base64decode).
+
+
 `sd:decode-html()`
 :    Convert a string to HTML.
 
-    | Argument | Type   | Optional | Description                                            |
-    | -------- | ------ | -------- | ------------------------------------------------------ |
-    | HTML text     | string | no      | The escaped HTML contents. |
+    | Argument  | Type   | Optional | Description                |
+    | --------- | ------ | -------- | -------------------------- |
+    | HTML text | string | no       | The escaped HTML contents. |
 
     Example: `sd:decode-html('&lt;b>bold text&lt;/b>')` creates a HTML structure like putting `<b>bold text</b>` in the data file.
 
@@ -108,8 +118,17 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
     | -------- | ------ | -------- | -------------------------------------------- |
     | number   | number | no       | Return true if the number is an even number. |
 
+`sd:file-contents()`
+:   Write the argument to a file in a temporary directory and return the file name.
+
+    | Argument | Type       | Optional | Description                             |
+    | -------- | ---------- | -------- | --------------------------------------- |
+    | data     | data array | no       | Write the contents to a temporary file. |
+
+    Useful for including images stored in the data file. See `sd:decode-base64()` and the [base64 example](https://github.com/speedata/xts-examples/tree/main/technical/base64decode).
+
 `sd:file-exists()`
-:     Return true if the file exists.
+:   Return true if the file exists.
 
     | Argument | Type   | Optional | Description                                                                      |
     | -------- | ------ | -------- | -------------------------------------------------------------------------------- |
@@ -235,8 +254,8 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
 `sd:variable()`
 :   Return the value of a variable. The variable name can be created dynamically.
 
-    | Argument       | Type   | Optional | Description                |
-    | -------------- | ------ | -------- | -------------------------- |
+    | Argument      | Type   | Optional | Description               |
+    | ------------- | ------ | -------- | ------------------------- |
     | variable name | string | no       | The name of the variable. |
 
     Assuming that the variable `$variablePrefix` contains the string `"fo"`, the following XPath expressions are equivalent: `$foo`, `sd:variable( 'foo' )` and `sd:variable( ($variablePrefix,'o') )` (notice the argument of the last example is a sequence).

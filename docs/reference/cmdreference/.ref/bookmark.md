@@ -41,7 +41,7 @@ Create a bookmark for the PDF viewer (e.g. Adobe Reader). When the user clicks o
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md))
+`select` ([XPath expressions](../../../manual/xpath.md))
 :   Title of the bookmark
 
 

@@ -25,7 +25,7 @@ Create an attribute for the [Element](../element.md) data structure that can be 
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md))
+`select` ([XPath expressions](../../../manual/xpath.md))
 :   The contents of the attribute
 
 

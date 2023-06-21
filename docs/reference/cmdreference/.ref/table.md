@@ -57,7 +57,7 @@ Create a table that is similar to the HTML table model.
 
 
 
-`eval` ([XPath expressions](../../manual/xpath.md), optional)
+`eval` ([XPath expressions](../../../manual/xpath.md), optional)
 :   Evaluates the given XPath expression and discards its output.
 
 

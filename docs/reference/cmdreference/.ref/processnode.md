@@ -31,7 +31,7 @@ Executes all given nodes. The elements, that are to be executed, are given with 
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md))
+`select` ([XPath expressions](../../../manual/xpath.md))
 :   Selection of child elements, that are to be processed.
 
 

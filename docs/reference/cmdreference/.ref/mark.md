@@ -41,7 +41,7 @@ Sets an invisible mark into the output. This is helpful when you want to know on
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md))
+`select` ([XPath expressions](../../../manual/xpath.md))
 :   The name of the mark to be set.
 
 

@@ -18,6 +18,12 @@ nav:
     - About XTS: introduction/index.md
     - Hello, world!: introduction/helloworld.md
   - Manual:
+    - How to write the layout file: manual/layoutxml.md
+    - Structure of the data file: manual/structuredatafile.md
+    - Placing objects: manual/outputtingobjects.md
+    - Grid: manual/grid.md
+    - Positioning areas: manual/positioningarea.md
+    - File organization: manual/fileorganization.md
     - XPath and layout functions: manual/xpath.md
     - Command line: manual/commandline.md
     - Configuration file: manual/configuration.md
@@ -26,77 +32,79 @@ nav:
       - Functions: manual/programming/functions.md
     - Defaults: manual/defaults.md
   - Reference:
-    - Overview: reference/index.md
-    - A: reference/a.md
-    - Action: reference/action.md
-    - AtPageCreation: reference/atpagecreation.md
-    - AtPageShipout: reference/atpageshipout.md
-    - Attribute: reference/attribute.md
-    - B: reference/b.md
-    - Barcode: reference/barcode.md
-    - Bold: reference/bold.md
-    - BoldItalic: reference/bolditalic.md
-    - Bookmark: reference/bookmark.md
-    - Box: reference/box.md
-    - Br: reference/br.md
-    - Case: reference/case.md
-    - Circle: reference/circle.md
-    - Clearpage: reference/clearpage.md
-    - Column: reference/column.md
-    - Columns: reference/columns.md
-    - Contents: reference/contents.md
-    - DefineColor: reference/definecolor.md
-    - DefineFontalias: reference/definefontalias.md
-    - DefineFontfamily: reference/definefontfamily.md
-    - DefineFontsize: reference/definefontsize.md
-    - DefineMasterpage: reference/definemasterpage.md
-    - DefineTextformat: reference/definetextformat.md
-    - Element: reference/element.md
-    - ForAll: reference/forall.md
-    - Function: reference/function.md
-    - Group: reference/group.md
-    - I: reference/i.md
-    - Image: reference/image.md
-    - Index: reference/index.md
-    - Italic: reference/italic.md
-    - Layout: reference/layout.md
-    - Li: reference/li.md
-    - Loaddataset: reference/loaddataset.md
-    - Loadfontfile: reference/loadfontfile.md
-    - Loop: reference/loop.md
-    - Mark: reference/mark.md
-    - Message: reference/message.md
-    - NextFrame: reference/nextframe.md
-    - NextRow: reference/nextrow.md
-    - Ol: reference/ol.md
-    - Options: reference/options.md
-    - Otherwise: reference/otherwise.md
-    - Pageformat: reference/pageformat.md
-    - Paragraph: reference/paragraph.md
-    - Param: reference/param.md
-    - PDFOptions: reference/pdfoptions.md
-    - PlaceObject: reference/placeobject.md
-    - PositioningArea: reference/positioningarea.md
-    - PositioningFrame: reference/positioningframe.md
-    - ProcessNode: reference/processnode.md
-    - Record: reference/record.md
-    - Regular: reference/regular.md
-    - SaveDataset: reference/savedataset.md
-    - SetGrid: reference/setgrid.md
-    - SetVariable: reference/setvariable.md
-    - Span: reference/span.md
-    - Stylesheet: reference/stylesheet.md
-    - Switch: reference/switch.md
-    - Table: reference/table.md
-    - Td: reference/td.md
-    - Textblock: reference/textblock.md
-    - Tr: reference/tr.md
-    - U: reference/u.md
-    - Ul: reference/ul.md
-    - Until: reference/until.md
-    - Trace: reference/trace.md
-    - Value: reference/value.md
-    - While: reference/while.md
+    - Installation: reference/installation.md
+    - Command reference:
+      - Overview: reference/cmdreference/index.md
+      - A: reference/cmdreference/a.md
+      - Action: reference/cmdreference/action.md
+      - AtPageCreation: reference/cmdreference/atpagecreation.md
+      - AtPageShipout: reference/cmdreference/atpageshipout.md
+      - Attribute: reference/cmdreference/attribute.md
+      - B: reference/cmdreference/b.md
+      - Barcode: reference/cmdreference/barcode.md
+      - Bold: reference/cmdreference/bold.md
+      - BoldItalic: reference/cmdreference/bolditalic.md
+      - Bookmark: reference/cmdreference/bookmark.md
+      - Box: reference/cmdreference/box.md
+      - Br: reference/cmdreference/br.md
+      - Case: reference/cmdreference/case.md
+      - Circle: reference/cmdreference/circle.md
+      - Clearpage: reference/cmdreference/clearpage.md
+      - Column: reference/cmdreference/column.md
+      - Columns: reference/cmdreference/columns.md
+      - Contents: reference/cmdreference/contents.md
+      - DefineColor: reference/cmdreference/definecolor.md
+      - DefineFontalias: reference/cmdreference/definefontalias.md
+      - DefineFontfamily: reference/cmdreference/definefontfamily.md
+      - DefineFontsize: reference/cmdreference/definefontsize.md
+      - DefineMasterpage: reference/cmdreference/definemasterpage.md
+      - DefineTextformat: reference/cmdreference/definetextformat.md
+      - Element: reference/cmdreference/element.md
+      - ForAll: reference/cmdreference/forall.md
+      - Function: reference/cmdreference/function.md
+      - Group: reference/cmdreference/group.md
+      - I: reference/cmdreference/i.md
+      - Image: reference/cmdreference/image.md
+      - Index: reference/cmdreference/index.md
+      - Italic: reference/cmdreference/italic.md
+      - Layout: reference/cmdreference/layout.md
+      - Li: reference/cmdreference/li.md
+      - Loaddataset: reference/cmdreference/loaddataset.md
+      - Loadfontfile: reference/cmdreference/loadfontfile.md
+      - Loop: reference/cmdreference/loop.md
+      - Mark: reference/cmdreference/mark.md
+      - Message: reference/cmdreference/message.md
+      - NextFrame: reference/cmdreference/nextframe.md
+      - NextRow: reference/cmdreference/nextrow.md
+      - Ol: reference/cmdreference/ol.md
+      - Options: reference/cmdreference/options.md
+      - Otherwise: reference/cmdreference/otherwise.md
+      - Pageformat: reference/cmdreference/pageformat.md
+      - Paragraph: reference/cmdreference/paragraph.md
+      - Param: reference/cmdreference/param.md
+      - PDFOptions: reference/cmdreference/pdfoptions.md
+      - PlaceObject: reference/cmdreference/placeobject.md
+      - PositioningArea: reference/cmdreference/positioningarea.md
+      - PositioningFrame: reference/cmdreference/positioningframe.md
+      - ProcessNode: reference/cmdreference/processnode.md
+      - Record: reference/cmdreference/record.md
+      - Regular: reference/cmdreference/regular.md
+      - SaveDataset: reference/cmdreference/savedataset.md
+      - SetGrid: reference/cmdreference/setgrid.md
+      - SetVariable: reference/cmdreference/setvariable.md
+      - Span: reference/cmdreference/span.md
+      - Stylesheet: reference/cmdreference/stylesheet.md
+      - Switch: reference/cmdreference/switch.md
+      - Table: reference/cmdreference/table.md
+      - Td: reference/cmdreference/td.md
+      - Textblock: reference/cmdreference/textblock.md
+      - Tr: reference/cmdreference/tr.md
+      - U: reference/cmdreference/u.md
+      - Ul: reference/cmdreference/ul.md
+      - Until: reference/cmdreference/until.md
+      - Trace: reference/cmdreference/trace.md
+      - Value: reference/cmdreference/value.md
+      - While: reference/cmdreference/while.md
 
 
 repo_url: https://github.com/speedata/xts
@@ -114,6 +122,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - def_list
+  - md_in_html
   - toc:
         permalink: "#"
 

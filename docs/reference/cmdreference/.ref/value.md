@@ -19,7 +19,7 @@ Contains a text value that is passed to the surrounding element.
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md), optional)
+`select` ([XPath expressions](../../../manual/xpath.md), optional)
 :   Value to be passed to the outer element.
 
 

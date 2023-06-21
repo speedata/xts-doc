@@ -67,7 +67,7 @@ Tablerow
 
 
 
-`data` ([XPath expressions](../../manual/xpath.md), optional)
+`data` ([XPath expressions](../../../manual/xpath.md), optional)
 :   Data that can be accessed via `$_last_tr_data` in the tablefoot and tablehead.
 
 

@@ -6,4 +6,4 @@ title: Function
 
 ## See also
 
-[The chapter in the programming section](../manual/programming/functions.md)
+[The chapter in the programming section](../../manual/programming/functions.md)

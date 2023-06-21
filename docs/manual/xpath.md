@@ -222,7 +222,7 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
 
     | Argument | Type   | Optional | Description                                                                                                    |
     | -------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------- |
-    | name     | string | no       | Return page number of a marker. The marker has to be defined with the command [`<Mark>`](../reference/mark.md) |
+    | name     | string | no       | Return page number of a marker. The marker has to be defined with the command [`<Mark>`](../reference/cmdreference/mark.md) |
 
 `sd:roman-numeral()`
 :    Return a number as a roman numeral.

@@ -19,7 +19,7 @@ Part of a [Switch](../switch.md) construct. All cases up to the first case which
 
 
 
-`test` ([XPath expressions](../../manual/xpath.md))
+`test` ([XPath expressions](../../../manual/xpath.md))
 :   The test that gets evaluated.
 
 

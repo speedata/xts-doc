@@ -19,7 +19,7 @@ Saves an element/attribute structure to be used in the next publisher run. The c
 
 
 
-`attributes` ([XPath expressions](../../manual/xpath.md), optional)
+`attributes` ([XPath expressions](../../../manual/xpath.md), optional)
 :   The variable (as an XPath expression, e.g. `$foo`) which contains [Attribute](../attribute.md) Elements. These attributes are added to the root element.
 
 
@@ -43,7 +43,7 @@ Saves an element/attribute structure to be used in the next publisher run. The c
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md), optional)
+`select` ([XPath expressions](../../../manual/xpath.md), optional)
 :   Alternative to giving the data structure in the child elements.
 
 

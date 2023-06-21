@@ -19,7 +19,7 @@ Create a loop. All child elements are executed as long as the condition in the t
 
 
 
-`test` ([XPath expressions](../../manual/xpath.md))
+`test` ([XPath expressions](../../../manual/xpath.md))
 :   Every time before the the loop is executed, this condition must evaluate to true. See the command [Until](../until.md) for a loop with an exit test.
 
 

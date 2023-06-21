@@ -7,4 +7,4 @@
 Getting started [Hello world](introduction/helloworld.md)
 
 
-Command reference [ref](reference/index.md)
+Command reference [ref](reference/cmdreference/index.md)

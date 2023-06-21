@@ -19,7 +19,7 @@ Create a loop. All child elements are executed repeatedly until the given condit
 
 
 
-`test` ([XPath expressions](../../manual/xpath.md))
+`test` ([XPath expressions](../../../manual/xpath.md))
 :   Every time after the the loop is executed, the condition is evaluated. If it is true, the loop exits.
 
 

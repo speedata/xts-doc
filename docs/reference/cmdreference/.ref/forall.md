@@ -25,7 +25,7 @@ Executes the given commands for all elements in the data XML file that match the
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md))
+`select` ([XPath expressions](../../../manual/xpath.md))
 :   Selects the child elements from the data XML
 
 

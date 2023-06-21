@@ -19,7 +19,7 @@ Contains the instructions when the publisher processes the element in the data f
 
 
 
-`element` ([XPath expressions](../../manual/xpath.md))
+`element` ([XPath expressions](../../../manual/xpath.md))
 :   The name of the element the record matches.
 
 

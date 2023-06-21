@@ -31,7 +31,7 @@ Define a master page. A master page is chosen depending on the criterion given w
 
 
 
-`test` ([XPath expressions](../../manual/xpath.md))
+`test` ([XPath expressions](../../../manual/xpath.md))
 :   If this xpath expression evaluates to true, this page is taken as a master page.
 
 

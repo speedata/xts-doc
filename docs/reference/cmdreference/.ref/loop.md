@@ -19,7 +19,7 @@ Repeat the contents of this element several times.
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md))
+`select` ([XPath expressions](../../../manual/xpath.md))
 :   The number of loops. Must be a number or castable as a number.
 
 

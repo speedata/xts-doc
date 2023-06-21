@@ -19,7 +19,7 @@ Associates a value with a variable name. The value can be a simple value or a mo
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md), optional)
+`select` ([XPath expressions](../../../manual/xpath.md), optional)
 :   The value of the contents.
 
 

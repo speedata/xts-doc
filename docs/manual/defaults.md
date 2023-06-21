@@ -76,7 +76,7 @@ The page grid is set to 10mm × 10mm.
 
 ## Colors
 
-The known CSS colors are defined in the RGB color space. The colors 'black' and 'white' are defined in the grayscale color space. See also the command [`<DefineColor>`](../reference/definecolor.md), there the predefined colors are listed.
+The known CSS colors are defined in the RGB color space. The colors 'black' and 'white' are defined in the grayscale color space. See also the command [`<DefineColor>`](../reference/cmdreference/definecolor.md), there the predefined colors are listed.
 
 The special colors HKS 1-97 and many Pantone colors are already defined with their CMYK values.
 

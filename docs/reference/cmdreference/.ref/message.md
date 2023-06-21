@@ -41,7 +41,7 @@ Writes a message onto the console and to the protocol file.
 
 
 
-`select` ([XPath expressions](../../manual/xpath.md), optional)
+`select` ([XPath expressions](../../../manual/xpath.md), optional)
 :   Contents of the message. You can alternatively specify the message by the child elements [Value](../value.md).
 
 

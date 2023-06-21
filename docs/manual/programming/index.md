@@ -1,9 +1,9 @@
 # Programming
 
-Certainly the most important feature of the Publisher is the ability to implement very flexible layout requirements. This is mainly achieved by the built-in programming language in connection with the query options of the Publisher.
+Certainly the most important feature of XTS is the ability to implement very flexible layout requirements. This is mainly achieved by the built-in programming language in connection with the query options of XTS.
 
 !!! note "execution time"
-    The program execution runs simultaneously with the creation of the PDF. Therefore, the speedata Publisher can react very flexibly to the input data. Queries such as “Is there still enough space for this object?” are thus possible. This distinguishes the Publisher from other software for creating PDF files. Basic programming knowledge is required to use the full functionality of the Publisher. The programming language has been kept as simple as possible to maintain the readability of the layout.
+    The program execution runs simultaneously with the creation of the PDF. Therefore, XTS can react very flexibly to the input data. Queries such as “Is there still enough space for this object?” are thus possible. This distinguishes XTS from other software for creating PDF files. Basic programming knowledge is required to use the full functionality of XTS. The programming language has been kept as simple as possible to maintain the readability of the layout.
 
 ## Two programming levels
 
@@ -53,9 +53,9 @@ All variables are globally visible. This means that a variable never becomes inv
     ~~~
 
 
-The output of the command [`<Message>`](../../reference/message.md) is 3. If the variable `no` was declared with local visibility, it could not be read in the data element.
+The output of the command [`<Message>`](../../reference/cmdreference/message.md) is 3. If the variable `no` was declared with local visibility, it could not be read in the data element.
 
-The global visibility is necessary because the program execution in the layout sometimes “jumps back and forth”. At the end of the page the content of [`<AtPageShipout>`](../../reference/atpageshipout.md) is executed in the current page type. It must also be possible to access the variables there.
+The global visibility is necessary because the program execution in the layout sometimes “jumps back and forth”. At the end of the page the content of [`<AtPageShipout>`](../../reference/cmdreference/atpageshipout.md) is executed in the current page type. It must also be possible to access the variables there.
 
 In variables not only simple values can be stored, but also complex XML sections:
 
@@ -181,7 +181,8 @@ This also works for more complex XML structures:
 
 ## Case distinctions
 
-Case distinctions correspond to the construction switch/case from C-like programming languages. They are applied in the Publisher as follows:
+Case distinctions correspond to the construction switch/case from C-like programming languages.
+They are applied in XTS as follows:
 
 ~~~xml
 <Switch>
@@ -202,7 +203,7 @@ All commands within the first possible `<Case>` case are processed if the condit
 
 ## Loops
 
-There are various loops in the speedata Publisher. The simple variant is `<Loop>`:
+There are various loops in XTS. The simple variant is `<Loop>`:
 
 ~~~xml
 <Loop select="10">
@@ -258,7 +259,7 @@ Since the until loop is executed until the condition is true, only the number 1 
 
 ## Data Structures
 
-The speedata Publisher does not offer direct support for data structures such as arrays (fields) or dictionaries (hashes or dictionaries). These can be simulated using variables. The field a1, a2, …​, ai could be filled as follows:
+XTS does not offer direct support for data structures such as arrays (fields) or dictionaries (hashes or dictionaries). These can be simulated using variables. The field a1, a2, …​, ai could be filled as follows:
 
 ~~~xml
 <SetVariable variable="{ concat('a',1) }" select="'Value for a1'"/>

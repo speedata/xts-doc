@@ -13,3 +13,17 @@ html {
     margin-top: 0em;
 }
 
+figure {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+
+figcaption {
+    text-align: left;
+    font-size: smaller;
+    margin-left: 0em !important;
+    max-width: 70% !important;
+}
+

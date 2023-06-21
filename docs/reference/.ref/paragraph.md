@@ -31,6 +31,12 @@ Insert a paragraph of text. The width of the paragraph is inherited from the sur
 
 
 
+`style` (text, optional)
+:   CSS style for this element.
+
+
+
+
 ## Example
 
 ```xml

@@ -55,11 +55,14 @@ $ xts <Command> <Parameter> <Parameter> ...
 `--loglevel=LVL`
 :   Set the log level for the console to one of debug, info, warn, error
 
-`--trace=NAMES`
-:   Set the trace to one or more of grid, allocation
+`--runs=N`
+:   Run XTS N times
 
 `--quiet`
 :   Run XTS in quiet mode
+
+`--suppressinfo`
+:   Create a reproducible document
 
 `--systemfonts`
 :   Use system fonts

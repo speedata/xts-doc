@@ -12,7 +12,7 @@ List item in an ordered or unordered list.
 
 ##  Parent elements
 
-[Ol](../ol.md), [Ul](../ul.md)
+[Case](../case.md), [ForAll](../forall.md), [Loop](../loop.md), [Ol](../ol.md), [Otherwise](../otherwise.md), [Ul](../ul.md), [Until](../until.md), [While](../while.md)
 
 
 ## Attributes

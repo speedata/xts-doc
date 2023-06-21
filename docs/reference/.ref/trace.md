@@ -99,6 +99,22 @@ Set debugging switches
 
 
 
+`objects` (optional)
+:   Draw boxes around objects.
+
+
+
+    `yes`
+    :    Show boxes.
+
+
+
+    `no`
+    :    Don't show the bounding boxes of objects.
+
+
+
+
 ## Example
 
 ```xml

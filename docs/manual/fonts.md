@@ -194,35 +194,19 @@ image::outlinehelloworld.png[width=100%]
 
 
 
-The OpenType features can be set with CSS styles, for example
+The OpenType features can be set directly with the element, for example
 
 ~~~xml
-<Layout xmlns="urn:speedata.de:2009/publisher/en"
-    xmlns:sd="urn:speedata:2009/publisher/functions/en"
-    >
-
-    <LoadFontfile name="CrimsonPro-Regular"
-      filename="CrimsonPro-Regular.ttf"
-      mode="harfbuzz" />
-    <LoadFontfile name="CrimsonPro-Regular-frac"
-      filename="CrimsonPro-Regular.ttf"
-      mode="harfbuzz"
-      features="+frac" />
-
-    <DefineFontfamily fontsize="10" leading="12" name="regular">
-        <Regular fontface="CrimsonPro-Regular" />
-    </DefineFontfamily>
-    <DefineFontfamily fontsize="10" leading="12" name="frac">
-        <Regular fontface="CrimsonPro-Regular-frac" />
-    </DefineFontfamily>
+<Layout xmlns="urn:speedata.de/2021/xts/en"
+    xmlns:sd="urn:speedata.de/2021/xtsfunctions/en">
 
     <Record element="data">
         <PlaceObject>
             <Textblock>
-                <Paragraph fontfamily="regular">
+                <Paragraph>
                     <Value>Use 1/4 cup of milk.</Value>
                 </Paragraph>
-                <Paragraph fontfamily="frac">
+                <Paragraph style="font-feature-settings: 'frac';">
                     <Value>Use 1/4 cup of milk.</Value>
                 </Paragraph>
             </Textblock>
@@ -232,14 +216,17 @@ The OpenType features can be set with CSS styles, for example
 ~~~
 
 
-.Upper text without the `frac` feature, lower text with the feature.
-image::frac-feature-hb.png[width=50%]
+<figure markdown>
+  ![frac opentype feature](img/frac-feature-hb.png){ width="66.6%" }
+  <figcaption>Upper text without the `frac` feature, lower text with the feature.</figcaption>
+</figure>
+
 
 A complete description of the OpenType features can be found on
 https://docs.microsoft.com/en-us/typography/opentype/spec/featurelist.
 The default features are the ones that are mentioned in the  https://harfbuzz.github.io/shaping-opentype-features.html[harfbuzz manual] but without `liga`.
 
-
+<!--
 [[ch-marginprotrusion]]
 ## Optical margin alignment
 
@@ -285,36 +272,35 @@ The associated data file (`data.xml`) is as follows:
 ~~~
 
 .Left: Comma, period and hyphen protrude into the right margin. Right: without optical margin alignment.
-image::marginprotrusion.png[width=100%]
+image::marginprotrusion.png[width=100%] -->
 
 ## In which directory must the font files be located?
 
-The organization of the files, and thus the fonts, is described in the directory File Organization. With `sp --systemfonts` when calling the publisher, you can access the system-wide font files.
+The organization of the files, and thus the fonts, is described in the directory File Organization. With `xts --systemfonts` when calling the publisher, you can access the system-wide font files.
 
 ## Tips and tricks
 
 In order to save yourself work in defining fonts, you can use the command
 
 ~~~
-$ sp list-fonts --xml
+$ xts list-fonts
 ~~~
 
-use. This will then list all font files found, together with a line that can be used directly in the layout.
+This will then list all font files found, together with a line that can be used directly in the layout.
 
 ~~~
 $ sp list-fonts --xml
-<LoadFontfile name="DejaVuSans-Bold"
-              filename="DejaVuSans-Bold.ttf" />
-<LoadFontfile name="DejaVuSans-BoldOblique"
-              filename="DejaVuSans-BoldOblique.ttf" />
-<LoadFontfile name="DejaVuSans-ExtraLight"
-              filename="DejaVuSans-ExtraLight.ttf" />
+<LoadFontfile name="DejaVuSans-Bold" filename="DejaVuSans-Bold.ttf" />
+<LoadFontfile name="DejaVuSans-BoldOblique" filename="DejaVuSans-BoldOblique.ttf" />
+<LoadFontfile name="DejaVuSans-ExtraLight" filename="DejaVuSans-ExtraLight.ttf" />
 ...
 ~~~
 
 
-TIP: If no font is specified for a paragraph or text block (etc.), the system uses the text font family, which is also predefined in the Publisher and can be overwritten. See the Preferences in the Publisher appendix.
+!!! note "hello world"
+    If no font is specified for a paragraph or text block (etc.), the system uses the text font family, which is also predefined in XTS and can be overwritten. See the defaults in the reference.
 
+<!--
 ## Missing characters and replacement fonts
 
 
@@ -339,7 +325,7 @@ Alternatively, you can also specify a replacement font at `<LoadFontfile>`, whic
 </LoadFontfile>
 ~~~
 
-First the font `texgyreheros-regular.otf` is searched, then `fontawesome-webfont.ttf` and finally `line-awesome.ttf`.
+First the font `texgyreheros-regular.otf` is searched, then `fontawesome-webfont.ttf` and finally `line-awesome.ttf`. -->
 
 ## Aliases
 
@@ -352,34 +338,27 @@ There is a command to add an alternate name for an existing font name to the lis
 The commands
 
 ~~~xml
-<LoadFontfile name="DejaVuSerif"
-        filename="DejaVuSerif.ttf" />
-<LoadFontfile name="DejaVuSerif-Bold"
-        filename="DejaVuSerif-Bold.ttf" />
-<LoadFontfile name="DejaVuSerif-BoldItalic"
-        filename="DejaVuSerif-BoldItalic.ttf" />
-<LoadFontfile name="DejaVuSerif-Italic"
-        filename="DejaVuSerif-Italic.ttf" />
+<LoadFontfile name="DejaVuSerif" filename="DejaVuSerif.ttf" />
+<LoadFontfile name="DejaVuSerif-Bold" filename="DejaVuSerif-Bold.ttf" />
+<LoadFontfile name="DejaVuSerif-BoldItalic" filename="DejaVuSerif-BoldItalic.ttf" />
+<LoadFontfile name="DejaVuSerif-Italic" filename="DejaVuSerif-Italic.ttf" />
 
-<DefineFontalias existing="DejaVuSerif" alias="serif"/>
+<DefineFontalias existing="DejaVuSerif" alias="serif-regular"/>
 <DefineFontalias existing="DejaVuSerif-Bold" alias="serif-bold"/>
 <DefineFontalias existing="DejaVuSerif-Italic" alias="serif-italic"/>
-<DefineFontalias existing="DejaVuSerif-BoldItalic"
-         alias="serif-bolditalic"/>
+<DefineFontalias existing="DejaVuSerif-BoldItalic"  alias="serif-bolditalic"/>
 ~~~
 
 now allow to define font families in general as follows:
 
 ~~~xml
-<DefineFontfamily name="title" fontsize="15" leading="17">
-  <Regular fontface="serif"/>
+<DefineFontfamily name="title">
+  <Regular fontface="serif-regular"/>
   <Bold fontface="serif-bold"/>
   <BoldItalic fontface="serif-bolditalic"/>
   <Italic fontface="serif-italic"/>
 </DefineFontfamily>
 ~~~
-
+<!--
 i.e. independent of the font actually used. With the options described in the section <<ch-splitlayout>>, you can now swap the font definition into a separate file and, if necessary, quickly choose between different fonts by including the desired files.
-
-
-// EOF
+ -->

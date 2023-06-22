@@ -46,7 +46,7 @@ The order in which the individual objects are output is important: the objects a
       <Image file="termsofservice.pdf" width="180mm" height="280mm"/>
     </PlaceObject>
     <PlaceObject column="1" row="{sd:number-of-rows()}">
-      <Textblock textformat="right">
+      <Textblock>
         <Paragraph>
           <Value select="sd:current-page()"/>
         </Paragraph>
@@ -68,7 +68,7 @@ If an object (such as images) requires a width or height specification, this can
 ## Text block
 This is a rectangular text area that is not wrapped over multiple pages. Text blocks are ideal for page numbers, short descriptions, column titles and all other units where page breaks are not desired.
 
-A block of text can contain one or more paragraphs. Both the text block itself and paragraphs can contain information about the font, colors and text formats used. If these are declared in the paragraphs, they take precedence over those specified in the text block.
+A block of text can contain one or more paragraphs.
 
 FIXME!!
 

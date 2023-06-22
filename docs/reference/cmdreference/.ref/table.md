@@ -97,12 +97,6 @@ Create a table that is similar to the HTML table model.
 
 
 
-`textformat` (text, optional)
-:   The text format for the table. Defaults to `__leftaligned` if no align attribute is given.
-
-
-
-
 `vexcess` (optional)
 :   Set behaviour when cells stretch in vertical direction due to rowspans.
 

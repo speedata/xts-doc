@@ -134,7 +134,7 @@ Print a 1d or 2d barcode. To be used in [PlaceObject](../placeobject.md).
 
 ```xml
 <PlaceObject>
-  <Barcode select="'XML typesetting system'" type="Code128" showtext="yes"/>
+  <Barcode select="'speedata Publisher'" type="Code128" showtext="yes"/>
 </PlaceObject>
 ```
 

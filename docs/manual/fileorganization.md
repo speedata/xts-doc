@@ -16,7 +16,7 @@ There are exceptions to the rule:
 1. You can use `sp --no-local` to instruct the publisher not to search the working directory recursively.
 1. With `--extra-dir` you can add a directory to be searched recursively.
 1. With `sp --systemfonts`, font files are also searched in directories that are predefined by the system.
-1. With `sp --wd DIR` the publisher changes to this directory before starting.
+<!-- 1. With `sp --wd DIR` the publisher changes to this directory before starting. -->
 
 For a description of the parameters see the section on the [command line](commandline.md).
 

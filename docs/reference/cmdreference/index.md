@@ -80,7 +80,6 @@ title: Index
 [Bookmark](bookmark.md)
 [Br](br.md)
 [DefineColor](definecolor.md)
-[DefineTextformat](definetextformat.md)
 [Layout](layout.md)
 [Mark](mark.md)
 [NextFrame](nextframe.md)

@@ -25,13 +25,15 @@ nav:
     - Positioning areas: manual/positioningarea.md
     - File organization: manual/fileorganization.md
     - XPath and layout functions: manual/xpath.md
-    - Command line: manual/commandline.md
-    - Configuration file: manual/configuration.md
+    - Using fonts: manual/fonts.md
+    - CSS and HTML: manual/csshtml.md
     - Programming:
       - Introduction: manual/programming/index.md
       - Functions: manual/programming/functions.md
-    - Defaults: manual/defaults.md
+    - Command line: manual/commandline.md
+    - Configuration file: manual/configuration.md
   - Reference:
+    - Defaults: reference/defaults.md
     - Installation: reference/installation.md
     - Command reference:
       - Overview: reference/cmdreference/index.md
@@ -58,7 +60,6 @@ nav:
       - DefineFontfamily: reference/cmdreference/definefontfamily.md
       - DefineFontsize: reference/cmdreference/definefontsize.md
       - DefineMasterpage: reference/cmdreference/definemasterpage.md
-      - DefineTextformat: reference/cmdreference/definetextformat.md
       - Element: reference/cmdreference/element.md
       - ForAll: reference/cmdreference/forall.md
       - Function: reference/cmdreference/function.md

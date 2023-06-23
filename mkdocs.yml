@@ -44,8 +44,6 @@ nav:
       - Attribute: reference/cmdreference/attribute.md
       - B: reference/cmdreference/b.md
       - Barcode: reference/cmdreference/barcode.md
-      - Bold: reference/cmdreference/bold.md
-      - BoldItalic: reference/cmdreference/bolditalic.md
       - Bookmark: reference/cmdreference/bookmark.md
       - Box: reference/cmdreference/box.md
       - Br: reference/cmdreference/br.md
@@ -56,9 +54,6 @@ nav:
       - Columns: reference/cmdreference/columns.md
       - Contents: reference/cmdreference/contents.md
       - DefineColor: reference/cmdreference/definecolor.md
-      - DefineFontalias: reference/cmdreference/definefontalias.md
-      - DefineFontfamily: reference/cmdreference/definefontfamily.md
-      - DefineFontsize: reference/cmdreference/definefontsize.md
       - DefineMasterpage: reference/cmdreference/definemasterpage.md
       - Element: reference/cmdreference/element.md
       - ForAll: reference/cmdreference/forall.md
@@ -67,11 +62,9 @@ nav:
       - I: reference/cmdreference/i.md
       - Image: reference/cmdreference/image.md
       - Index: reference/cmdreference/index.md
-      - Italic: reference/cmdreference/italic.md
       - Layout: reference/cmdreference/layout.md
       - Li: reference/cmdreference/li.md
       - Loaddataset: reference/cmdreference/loaddataset.md
-      - Loadfontfile: reference/cmdreference/loadfontfile.md
       - Loop: reference/cmdreference/loop.md
       - Mark: reference/cmdreference/mark.md
       - Message: reference/cmdreference/message.md
@@ -89,7 +82,6 @@ nav:
       - PositioningFrame: reference/cmdreference/positioningframe.md
       - ProcessNode: reference/cmdreference/processnode.md
       - Record: reference/cmdreference/record.md
-      - Regular: reference/cmdreference/regular.md
       - SaveDataset: reference/cmdreference/savedataset.md
       - SetGrid: reference/cmdreference/setgrid.md
       - SetVariable: reference/cmdreference/setvariable.md

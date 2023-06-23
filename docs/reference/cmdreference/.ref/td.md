@@ -238,9 +238,6 @@ The following example places a background text behind the Td cell.
 
 
 ```xml
-<DefineFontfamily name="td-background" fontsize="12" leading="12">
-  <Regular fontface="TeXGyreHeros-Bold"/>
-</DefineFontfamily>
 
 <Record element="data">
    <PlaceObject>

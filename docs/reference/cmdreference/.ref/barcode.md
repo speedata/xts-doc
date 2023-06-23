@@ -58,7 +58,7 @@ Print a 1d or 2d barcode. To be used in [PlaceObject](../placeobject.md).
 
 
 `fontsize` (text, optional)
-:   Set the font size. You can use a name predefined with [DefineFontsize](../definefontsize.md) or a string such as "10pt/12pt" to set the font size and the leading. Defaults to 'text'.
+:   Set the font size. You can use a string such as "10pt/12pt" to set the font size and the leading. Defaults to 'text'.
 
 
 

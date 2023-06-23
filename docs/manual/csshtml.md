@@ -9,19 +9,6 @@ See this example:
 <Layout xmlns="urn:speedata.de/2021/xts/en"
     xmlns:sd="urn:speedata.de/2021/xtsfunctions/en">
 
-    <LoadFontfile name="CormorantGaramond-Regular" filename="CormorantGaramond-Regular.ttf" />
-    <LoadFontfile name="CormorantGaramond-Bold" filename="CormorantGaramond-Bold.ttf" />
-    <LoadFontfile name="CormorantGaramond-BoldItalic" filename="CormorantGaramond-BoldItalic.ttf" />
-    <LoadFontfile name="CormorantGaramond-Italic" filename="CormorantGaramond-Italic.ttf" />
-
-    <DefineFontfamily name="serif">
-        <Regular fontface="CormorantGaramond-Regular" />
-        <!-- not strictly necessary in this document: -->
-        <Bold fontface="CormorantGaramond-Bold" />
-        <Italic fontface="CormorantGaramond-Italic" />
-        <BoldItalic fontface="CormorantGaramond-BoldItalic" />
-    </DefineFontfamily>
-
     <Stylesheet>
         p {
             font-family: serif;

@@ -3,54 +3,70 @@
 
 Embedding fonts in the common formats is very easy. The formats Type1 (files .pfb and .afm) as well as TrueType and OpenType (files .ttf and .otf) are supported.
 
-To make fonts known and used by the publisher, two steps are necessary. The first step is to load a font file:
+## Loading fonts
+
+To make fonts known and used by XTS, two steps are necessary. The first step is to load a font family:
 
 ~~~xml
-<LoadFontfile name="MinionRegular" filename="MinionPro-Regular.otf" />
-<LoadFontfile name="MinionBold" filename="MinionPro-Bold.otf" />
-<LoadFontfile name="MinionItalic" filename="MinionPro-Italic.otf" />
-<LoadFontfile name="MinionBoldItalic" filename="MinionPro-BoldItalic.otf" />
+<Stylesheet>
+  @font-face {
+        font-family: "Minion Pro";
+        src: url("MinionPro-Regular.otf");
+  }
+
+  @font-face {
+      font-family: "Minion Pro";
+      src: url("MinionPro-Bold.otf");
+      font-weight: bold;
+  }
+  @font-face {
+      font-family: "Minion Pro";
+      src: url("MinionPro-BoldIt.otf");
+      font-weight: bold;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: "Minion Pro";
+      src: url("MinionPro-It.otf");
+      font-style: italic;
+  }
+</Stylesheet>
 ~~~
 
-This assigns the file name `MinionPro-Regular.otf` the internal name `MinionRegular` (the same with the other three lines). In the second step, these internal names are then used to define families:
+This defines a font family with the name “Minion Pro” (including the space) with four different font files.
 
-~~~xml
-<DefineFontfamily name="textfont">
-  <Regular fontface="MinionRegular"/>
-  <Bold fontface="MinionBold"/>
-  <Italic fontface="MinionItalic"/>
-  <BoldItalic fontface="MinionBoldItalic"/>
-</DefineFontfamily>
-~~~
-
-The last three cuts (bold, italic and bold italic) do not have to be specified if they are not used in the layout.
-
-To predefine a font size and a leading setting, use
-
-~~~xml
-<DefineFontsize name="text" fontsize="10pt" leading="12pt" />
-~~~
+The last three fonts (bold, italic and bold italic) do not have to be specified if they are not used in the layout.
 
 <figure markdown>
   ![font size and leading](img/14-fontsize-leading.png){ width="100%" }
-  <figcaption>Font size and line spacing</figcaption>
+  <figcaption>Font size and line height</figcaption>
 </figure>
 
+## Selecting fonts
 
-The font is used in different ways: in the commands `<Textblock>`, `<Text>`, `<Paragraph>`, `<Table>`, `<NoBreak>` and `<Barcode>`, a font can be specified with the attribute fontfamily, e.g. `<Paragraph fontfamily="text font">`. Temporarily you can switch to another family with the command `<Fontface fontfamily="...">`:
+The font can now be used by setting a style in a stylesheet:
 
 ~~~xml
+<Stylesheet>
+  body {
+    font-family: serif;
+  }
+  .preface {
+    font-family: sans;
+  }
+</Stylesheet>
+
 <Paragraph>
-  <Fontface fontfamily="title">
-    <Value>Preface</Value>
-  </Fontface>
+    <Span class="preface">
+      <Value>Preface</Value>
+    </Span>
   <Value> more text</Value>
 </Paragraph>
 ~~~
 
 ## Text markup in the layout file
 
-There are several ways to switch to the fonts bold, italic and fat-italic. The most direct one is to switch with the commands `<B>` and `<I>`, these can also be nested within each other:
+There are several ways to switch to the fonts bold, italic and bold-italic. The most direct one is to switch with the commands `<B>` and `<I>`, these can also be nested within each other:
 
 ~~~xml
 <PlaceObject>
@@ -120,24 +136,11 @@ TIP: If the data is not in well-formed XML but in HTML format for example, you c
 
 ## OpenType Features
 
-The OpenType format knows so-called OpenType features, such as old style figures or small caps. Some of these features can be activated with CSS stylesheets (see the )`<LoadFontfile>`.
+The OpenType format knows so-called OpenType features, such as old style figures or small caps.
 
 ~~~xml
 <Layout xmlns="urn:speedata.de/2021/xts/en"
     xmlns:sd="urn:speedata.de/2021/xtsfunctions/en">
-
-    <LoadFontfile name="CormorantGaramond-Regular" filename="CormorantGaramond-Regular.ttf" />
-    <LoadFontfile name="CormorantGaramond-Bold" filename="CormorantGaramond-Bold.ttf" />
-    <LoadFontfile name="CormorantGaramond-BoldItalic" filename="CormorantGaramond-BoldItalic.ttf" />
-    <LoadFontfile name="CormorantGaramond-Italic" filename="CormorantGaramond-Italic.ttf" />
-
-    <DefineFontfamily name="serif">
-        <Regular fontface="CormorantGaramond-Regular" />
-        <!-- not strictly necessary in this document: -->
-        <Bold fontface="CormorantGaramond-Bold" />
-        <Italic fontface="CormorantGaramond-Italic" />
-        <BoldItalic fontface="CormorantGaramond-BoldItalic" />
-    </DefineFontfamily>
 
     <Stylesheet>
         p {
@@ -171,6 +174,9 @@ The OpenType format knows so-called OpenType features, such as old style figures
   <figcaption>Table figures (above) have the same width and are often used in tabular typesetting. Real small caps (below) differ significantly from mathematically reduced capital letters. The line width and proportions must be adjusted. Depending on the font used, smallcaps also switches to “old style figures” which makes reading more pleasant.</figcaption>
 </figure>
 
+You can also define OpenType features in the `font-face @-rule`:
+
+FIXME
 
 <!--
 ## Outline font
@@ -218,13 +224,13 @@ The OpenType features can be set directly with the element, for example
 
 <figure markdown>
   ![frac opentype feature](img/frac-feature-hb.png){ width="66.6%" }
-  <figcaption>Upper text without the `frac` feature, lower text with the feature.</figcaption>
+  <figcaption>Upper text without the <code>frac</code> feature, lower text with the feature.</figcaption>
 </figure>
 
 
-A complete description of the OpenType features can be found on
-https://docs.microsoft.com/en-us/typography/opentype/spec/featurelist.
-The default features are the ones that are mentioned in the  https://harfbuzz.github.io/shaping-opentype-features.html[harfbuzz manual] but without `liga`.
+A complete description of the OpenType features can be found in the [OpenType spec](https://docs.microsoft.com/en-us/typography/opentype/spec/featurelist).
+.
+The default features are the ones that are mentioned in the [harfbuzz manual](https://harfbuzz.github.io/shaping-opentype-features.html) but without `liga`.
 
 <!--
 [[ch-marginprotrusion]]
@@ -276,7 +282,7 @@ image::marginprotrusion.png[width=100%] -->
 
 ## In which directory must the font files be located?
 
-The organization of the files, and thus the fonts, is described in the directory File Organization. With `xts --systemfonts` when calling the publisher, you can access the system-wide font files.
+The organization of the files, and thus the fonts, is described in the directory File Organization. With `xts --systemfonts` when calling xts, you can access the system-wide font files.
 
 ## Tips and tricks
 
@@ -286,14 +292,14 @@ In order to save yourself work in defining fonts, you can use the command
 $ xts list-fonts
 ~~~
 
-This will then list all font files found, together with a line that can be used directly in the layout.
+This will then list all font files found, together with a line that can be used directly in the stylesheet.
 
 ~~~
-$ sp list-fonts --xml
-<LoadFontfile name="DejaVuSans-Bold" filename="DejaVuSans-Bold.ttf" />
-<LoadFontfile name="DejaVuSans-BoldOblique" filename="DejaVuSans-BoldOblique.ttf" />
-<LoadFontfile name="DejaVuSans-ExtraLight" filename="DejaVuSans-ExtraLight.ttf" />
-...
+$ xts list-fonts
+@font-face { font-family: "CamingoCode"; src: url("CamingoCode-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: "CamingoCode"; src: url("CamingoCode-BoldItalic.ttf"); font-weight: bold;  font-style: italic;}
+@font-face { font-family: "CamingoCode"; src: url("CamingoCode-Italic.ttf"); font-style: italic;}
+@font-face { font-family: "CamingoCode"; src: url("CamingoCode-Regular.ttf");}
 ~~~
 
 
@@ -326,39 +332,3 @@ Alternatively, you can also specify a replacement font at `<LoadFontfile>`, whic
 ~~~
 
 First the font `texgyreheros-regular.otf` is searched, then `fontawesome-webfont.ttf` and finally `line-awesome.ttf`. -->
-
-## Aliases
-
-There is a command to add an alternate name for an existing font name to the list of known font names:
-
-~~~xml
-<DefineFontalias existing="..." alias="..."/>
-~~~
-
-The commands
-
-~~~xml
-<LoadFontfile name="DejaVuSerif" filename="DejaVuSerif.ttf" />
-<LoadFontfile name="DejaVuSerif-Bold" filename="DejaVuSerif-Bold.ttf" />
-<LoadFontfile name="DejaVuSerif-BoldItalic" filename="DejaVuSerif-BoldItalic.ttf" />
-<LoadFontfile name="DejaVuSerif-Italic" filename="DejaVuSerif-Italic.ttf" />
-
-<DefineFontalias existing="DejaVuSerif" alias="serif-regular"/>
-<DefineFontalias existing="DejaVuSerif-Bold" alias="serif-bold"/>
-<DefineFontalias existing="DejaVuSerif-Italic" alias="serif-italic"/>
-<DefineFontalias existing="DejaVuSerif-BoldItalic"  alias="serif-bolditalic"/>
-~~~
-
-now allow to define font families in general as follows:
-
-~~~xml
-<DefineFontfamily name="title">
-  <Regular fontface="serif-regular"/>
-  <Bold fontface="serif-bold"/>
-  <BoldItalic fontface="serif-bolditalic"/>
-  <Italic fontface="serif-italic"/>
-</DefineFontfamily>
-~~~
-<!--
-i.e. independent of the font actually used. With the options described in the section <<ch-splitlayout>>, you can now swap the font definition into a separate file and, if necessary, quickly choose between different fonts by including the desired files.
- -->

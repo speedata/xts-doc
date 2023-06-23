@@ -5,51 +5,131 @@ These defaults concern the colors, fonts and page size and margins.
 
 ## Fonts
 
-~~~xml
-<LoadFontfile name="CamingoCode-Bold"        filename="CamingoCode-Bold.ttf" />
-<LoadFontfile name="CamingoCode-BoldItalic"  filename="CamingoCode-BoldItalic.ttf" />
-<LoadFontfile name="CamingoCode-Italic"      filename="CamingoCode-Italic.ttf" />
-<LoadFontfile name="CamingoCode-Regular"     filename="CamingoCode-Regular.ttf" />
-<LoadFontfile name="CrimsonPro-Bold"         filename="CrimsonPro-Bold.ttf" />
-<LoadFontfile name="CrimsonPro-BoldItalic"   filename="CrimsonPro-BoldItalic.ttf" />
-<LoadFontfile name="CrimsonPro-Italic"       filename="CrimsonPro-Italic.ttf" />
-<LoadFontfile name="CrimsonPro-Regular"      filename="CrimsonPro-Regular.ttf" />
-<LoadFontfile name="TeXGyreHeros-Bold"       filename="texgyreheros-bold.otf" />
-<LoadFontfile name="TeXGyreHeros-BoldItalic" filename="texgyreheros-bolditalic.otf" />
-<LoadFontfile name="TeXGyreHeros-Italic"     filename="texgyreheros-italic.otf" />
-<LoadFontfile name="TeXGyreHeros-Regular"    filename="texgyreheros-regular.otf" />
+These font faces are predefined:
+
+~~~css
+@font-face {
+    font-family: "monospace";
+    src: url("CamingoCode-Regular.ttf");
+}
+@font-face {
+    font-family: "monospace";
+    src: url("CamingoCode-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "monospace";
+    src: url("CamingoCode-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "monospace";
+    src: url("CamingoCode-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "serif";
+    src: url("CrimsonPro-Regular.ttf");
+}
+@font-face {
+    font-family: "serif";
+    src: url("CrimsonPro-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "serif";
+    src: url("CrimsonPro-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "serif";
+    src: url("CrimsonPro-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "sans";
+    src: url("texgyreheros-regular.otf");
+}
+@font-face {
+    font-family: "sans";
+    src: url("texgyreheros-bold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "sans";
+    src: url("texgyreheros-bolditalic.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "sans";
+    src: url("texgyreheros-italic.otf");
+    font-style: italic;
+}
+~~~
+
+## CSS defaults
+
+The CSS defaults are:
+
+~~~css
+html            { font-size: 10pt; tab-size: 4; font-family: sans; }
+li              { display: list-item; padding-left: 0; }
+head            { display: none }
+table           { display: table }
+tr              { display: table-row }
+thead           { display: table-header-group }
+tbody           { display: table-row-group }
+tfoot           { display: table-footer-group }
+td, th          { display: table-cell }
+caption         { display: table-caption }
+th              { font-weight: bold; text-align: center }
+caption         { text-align: center }
+body            { margin: 0pt; line-height: 1.2; hyphens: auto; font-weight: normal; }
+h1              { font-size: 2em; margin:  .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+h5              { font-size: 1em; margin: 1.5em 0; text-align: left; }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bold }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address    { font-style: italic }
+pre, tt, code,
+kbd, samp       { font-family: monospace; -bag-font-expansion: 0%;}
+pre             { white-space: pre; margin: 1em 0px; }
+button, textarea,
+input, select   { display: inline-block }
+big             { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub             { vertical-align: sub }
+sup             { vertical-align: super }
+table           { border-spacing: 2pt; }
+thead, tbody,
+tfoot           { vertical-align: middle }
+td, th, tr      { vertical-align: inherit }
+s, strike, del  { text-decoration: line-through }
+hr              { border: 1px inset }
+ol, ul, dir, dd { padding-left: 20pt }
+ol              { list-style-type: decimal }
+ul              { list-style-type: disc }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+u, ins          { text-decoration: underline }
+center          { text-align: center }
 ~~~
 
 
-The corresponding font family and font size is defined as:
-
-~~~xml
-<DefineFontfamily name="text">
-  <Regular    fontface="TeXGyreHeros-Regular"/>
-  <Bold       fontface="TeXGyreHeros-Bold"/>
-  <Italic     fontface="TeXGyreHeros-Italic"/>
-  <BoldItalic fontface="TeXGyreHeros-BoldItalic"/>
-</DefineFontfamily>
-
-<DefineFontsize name="text" fontsize="10pt" leading="12pt" />
-~~~
-
-In both cases the name `text` is used as a default, so you get a 10 point sans font when you do not define anything else.
-
-The font aliases are defined for the default font:
-
-* TeXGyreHeros-Regular → sans-regular
-* TeXGyreHeros-Bold → sans-bold
-* TeXGyreHeros-Italic → sans-italic
-* TeXGyreHeros-BoldItalic → sans-bolditalic
-* CrimsonPro-Regular → serif-regular
-* CrimsonPro-Bold → serif-bold
-* CrimsonPro-Italic → serif-italic
-* CrimsonPro-BoldItalic → serif-bolditalic
-* CamingoCode-Regular → monospace-regular
-* CamingoCode-Bold → monospace-bold
-* CamingoCode-Italic → monospace-italic
-* CamingoCode-BoldItalic → monospace-bolditalic
 
 ## Page size and margin
 

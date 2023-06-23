@@ -6,17 +6,14 @@ title: Index
 
 ## By topic
 
-### Fonts
+### Text formatting
 [B](b.md)
-[Bold](bold.md),
-[BoldItalic](bolditalic.md)
-[DefineFontfamily](definefontfamily.md)
-[DefineFontsize](definefontsize.md)
 [I](i.md)
-[Italic](italic.md),
-[LoadFontfile](loadfontfile.md)
-[Regular](regular.md)
 [U](u.md)
+[Stylesheet](stylesheet.md)
+[Span](span.md)
+[Br](br.md)
+
 
 
 
@@ -26,6 +23,7 @@ title: Index
 [AtPageShipout](atpageshipout.md),
 [ClearPage](clearpage.md)
 [DefineMasterpage](definemasterpage.md),
+[NextFrame](nextframe.md)
 [Pageformat](pageformat.md)
 [PositioningArea](positioningarea.md),
 [PositioningFrame](positioningframe.md),
@@ -78,15 +76,11 @@ title: Index
 [A](a.md)
 [Action](action.md)
 [Bookmark](bookmark.md)
-[Br](br.md)
 [DefineColor](definecolor.md)
 [Layout](layout.md)
 [Mark](mark.md)
-[NextFrame](nextframe.md)
 [NextRow](nextrow.md)
 [Options](options.md)
 [PDFOptions](pdfoptions.md)
-[Span](span.md)
-[Stylesheet](stylesheet.md)
 [Trace](trace.md)
 

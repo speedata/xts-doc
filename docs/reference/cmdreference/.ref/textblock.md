@@ -19,18 +19,6 @@ Create a rectangular piece of text.
 
 
 
-`fontfamily` (text, optional)
-:   The name of the font family. Defaults to `text`.
-
-
-
-
-`fontsize` (text, optional)
-:   Set the font size. You can use a name predefined with [DefineFontsize](../definefontsize.md) or a string such as "10pt/12pt" to set the font size and the leading. Defaults to 'text'.
-
-
-
-
 `parsep` (length, optional)
 :   The vertical distance between two paragraphs.
 
@@ -48,9 +36,9 @@ Create a rectangular piece of text.
 ```xml
 <Record element="data">
   <PlaceObject>
-    <Textblock width="10" angle="-20">
+    <Textblock width="10">
       <Paragraph>
-        <B><Value>Bold slanted text</Value></B>
+        <B><Value>Bold text</Value></B>
       </Paragraph>
     </Textblock>
   </PlaceObject>

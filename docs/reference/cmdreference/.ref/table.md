@@ -70,7 +70,7 @@ Create a table that is similar to the HTML table model.
 
 
 `fontsize` (text, optional)
-:   Set the font size. You can use a name predefined with [DefineFontsize](../definefontsize.md) or a string such as "10pt/12pt" to set the font size and the leading. Defaults to 'text'.
+:   Set the font size. You can use a string such as "10pt/12pt" to set the font size and the leading. Defaults to 'text'.
 
 
 

@@ -175,6 +175,16 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
 `sd:last-page-number()`
 :   Return the last page number of the document. This actually returns the number of pages of the previous run, so it might not be accurate if the number of pages changes in a subsequent run.
 
+`sd:markdown()`
+:   Interpret the argument as markdown and return HTML.
+
+    | Argument | Type   | Optional | Description                         |
+    | -------- | ------ | -------- | ----------------------------------- |
+    | input    | string | no       | The markdown encoded document text. |
+
+    Example: `sd:markdown( '**strong text**' )` returns the string `<strong>strong text</strong>` which gets interpreted as HTML.
+
+
 `sd:md5()`, `sd:sha1()`, `sd:sha256()`, `sd:sha512()`
 :   Calculate hash values.
 
@@ -220,8 +230,8 @@ The layout functions are in the name space `urn:speedata.de/2021/xtsfunctions/en
 `sd:page-number()`
 :    Return the page number of a marker.
 
-    | Argument | Type   | Optional | Description                                                                                                    |
-    | -------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------- |
+    | Argument | Type   | Optional | Description                                                                                                                 |
+    | -------- | ------ | -------- | --------------------------------------------------------------------------------------------------------------------------- |
     | name     | string | no       | Return page number of a marker. The marker has to be defined with the command [`<Mark>`](../reference/cmdreference/mark.md) |
 
 `sd:roman-numeral()`

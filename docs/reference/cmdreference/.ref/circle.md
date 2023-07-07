@@ -87,7 +87,7 @@ looks like
 
 
 
-image::ref-circlewithborder.png[width=auto]
+![](../img/ref-circlewithborder.png){: style="width=auto"; }
 
 
 

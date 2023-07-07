@@ -8,7 +8,7 @@ Create a table that is similar to the HTML table model.
 
 ##  Child elements
 
-[Columns](../columns.md), [Tr](../tr.md), [Value](../value.md)
+[Columns](../columns.md), [ForAll](../forall.md), [Loop](../loop.md), [Tablehead](../tablehead.md), [Tr](../tr.md), [Value](../value.md)
 
 ##  Parent elements
 
@@ -16,100 +16,6 @@ Create a table that is similar to the HTML table model.
 
 
 ## Attributes
-
-
-
-`balance` (optional)
-:   Tries to balance the table on the last page according to the number of frames. Experimental! 
-
-
-
-    `yes`
-    :    Tries to balance.
-
-
-
-    `no`
-    :    First column will filled first, default
-
-
-
-
-`border-collapse` (optional)
-:   Determine if adjacent table cells share borders. The behavior of border-collapse="collapse" is undefined when the table has columndistance or rowdistance set to a non-zero value and if the adjacent borders don't have the same width and color.
-
-
-
-    `separate`
-    :    The borders are part of the cell and not shared with its neighbors.
-
-
-
-    `collapse`
-    :    The borders of neighboring cells overlap.
-
-
-
-
-`columndistance` (length, optional)
-:   Distance between two table columns.
-
-
-
-
-`eval` ([XPath expressions](../../../manual/xpath.md), optional)
-:   Evaluates the given XPath expression and discards its output.
-
-
-
-
-`fontfamily` (text, optional)
-:   Name of the font family for the table. If not given, the font face ‘text’ is used.
-
-
-
-
-`fontsize` (text, optional)
-:   Set the font size. You can use a string such as "10pt/12pt" to set the font size and the leading. Defaults to 'text'.
-
-
-
-
-`padding` (length, optional)
-:   The distance between the table border and the table contents.
-
-
-
-
-`stretch` (optional)
-:   If the table contents is narrow and stretch has the value no, the table only uses the minimal width. If the table contents is wider than the value width or stretch has the value max, the table's width is the size given in the width attribute.
-
-
-
-    `yes`
-    :    Stretch the table to its given width.
-
-
-
-    `no`
-    :    The table width is the minimum width depending on it's contents.
-
-
-
-
-`vexcess` (optional)
-:   Set behaviour when cells stretch in vertical direction due to rowspans.
-
-
-
-    `stretch`
-    :    Stretch all table cells evenly (default).
-
-
-
-    `bottom`
-    :    Only stretch the last table cell.
-
 
 
 
@@ -127,53 +33,61 @@ The table cells may contain Paragraphs, Images and other objects that are allowe
 
 ```xml
 
+<Stylesheet>
+    table {
+        font-family: serif;
+        font-size: 14pt;
+        width: 100%;
+    }
+    td {
+        border-top: 0.5 solid black;
+        border-bottom: 0.5 solid black;
+        text-align: center;
+    }
+    thead {
+        font-weight: bold ;
+    }
+    .left { text-align: left ; }
+</Stylesheet>
 <Record element="data">
-  <PlaceObject>
-    <Table stretch="yes" padding="1pt">
-      <Tablehead>
-        <Tr backgroundcolor="gray">
-          <Td colspan="3"/>
-          <Td border-left="0.2pt" border-left-color="white" colspan="6" align="center">
-            <Paragraph><B><Value>Total</Value></B></Paragraph></Td>
-          <Td border-left="0.2pt" border-left-color="white"/>
-        </Tr>
-        <Tr backgroundcolor="gray">
-          <Td/>
-          <Td><Paragraph><B><Value>Clubs</Value></B></Paragraph></Td>
-          <Td><Paragraph><B><Value>P</Value></B></Paragraph></Td>
-          <Td align="center" border-left="0.2pt" border-left-color="white">
-            <Paragraph><B><Value>W</Value></B></Paragraph>
-          </Td>
-          <Td align="center"><Paragraph><B><Value>D</Value></B></Paragraph></Td>
-          <Td align="center"><Paragraph><B><Value>L</Value></B></Paragraph></Td>
-          <Td align="center"><Paragraph><B><Value>F</Value></B></Paragraph></Td>
-          <Td align="center"><Paragraph><B><Value>A</Value></B></Paragraph></Td>
-          <Td align="center"><Paragraph><B><Value>+/-</Value></B></Paragraph></Td>
-          <Td align="center" border-left="0.2pt" border-left-color="white">
-            <Paragraph><B><Value>Pts</Value></B></Paragraph>
-          </Td>
-        </Tr>
-      </Tablehead>
-      <ForAll select="entry">
-        <Tr>
-          <Td align="left"><Paragraph><Value select="@pos"/></Paragraph></Td>
-          <Td align="left"><Paragraph><Value select="@name"/></Paragraph></Td>
-          <Td align="center"><Paragraph><Value select="@p"/></Paragraph></Td>
-          <Td align="center" border-left="0.2pt" border-left-color="gray">
-            <Paragraph><Value select="@tw"/></Paragraph>
-          </Td>
-          <Td align="center"><Paragraph><Value select="@td"/></Paragraph></Td>
-          <Td align="center"><Paragraph><Value select="@tl"/></Paragraph></Td>
-          <Td align="center"><Paragraph><Value select="@ta"/></Paragraph></Td>
-          <Td align="center"><Paragraph><Value select="@tf"/></Paragraph></Td>
-          <Td align="center"><Paragraph><Value select="@tpm"/></Paragraph></Td>
-          <Td align="center" border-left="0.2pt" border-left-color="gray">
-            <Paragraph><Value select="@pts"/></Paragraph>
-          </Td>
-        </Tr>
-      </ForAll>
-    </Table>
-  </PlaceObject>
+    <PlaceObject>
+        <Table>
+            <Tablehead>
+                <Tr>
+                    <Td colspan="2"/>
+                    <Td colspan="7">
+                      <Paragraph><Value>Total</Value></Paragraph></Td>
+                    <Td/>
+                </Tr>
+                <Tr>
+                    <Td/>
+                    <Td class="left"><Paragraph><Value>Clubs</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>P</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>W</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>D</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>L</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>F</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>A</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>+/-</Value></Paragraph></Td>
+                    <Td><Paragraph><Value>Pts</Value></Paragraph></Td>
+                </Tr>
+            </Tablehead>
+            <ForAll select="entry">
+                <Tr>
+                    <Td><Paragraph><Value select="@pos"/></Paragraph></Td>
+                    <Td class="left"><Paragraph><Value select="@name"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@p"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@tw"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@td"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@tl"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@ta"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@tf"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@tpm"/></Paragraph></Td>
+                    <Td><Paragraph><Value select="@pts"/></Paragraph></Td>
+                </Tr>
+            </ForAll>
+        </Table>
+    </PlaceObject>
 </Record>
 
 ```
@@ -194,7 +108,7 @@ Using the following data:
 </data>
 ```
 
-image::ref-table-en.png[width=auto]
+![](../img/ref-table.png){: style="width=auto"; }
 
 
 

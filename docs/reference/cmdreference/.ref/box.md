@@ -63,7 +63,7 @@ looks like
 
 
 
-image::ref-greenbox.png[width=auto]
+![](../img/ref-greenbox.png){: style="width=auto"; }
 
 
 

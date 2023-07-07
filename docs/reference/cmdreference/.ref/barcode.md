@@ -142,7 +142,7 @@ gives
 
 
 
-image::ref-code128-speedata-publisher.png[width=auto]
+![](../img/ref-code128-speedata-publisher.png){: style="width=auto"; }
 ```xml
 <PlaceObject>
   <Barcode select="4242002518169" type="EAN13"/>
@@ -153,7 +153,7 @@ becomes
 
 
 
-image::ref-ean13-supertex.png[width=300]
+![](../img/ref-ean13-supertex.png){: style="width=300"; }
 
 And finally the QR code
 
@@ -169,7 +169,7 @@ looks like
 
 
 
-image::ref-speedata-publisher-qrcode.png[width=300]
+![](../img/ref-speedata-publisher-qrcode.png){: style="width=300"; }
 
 
 

@@ -89,6 +89,7 @@ nav:
       - Stylesheet: reference/cmdreference/stylesheet.md
       - Switch: reference/cmdreference/switch.md
       - Table: reference/cmdreference/table.md
+      - Tablehead: reference/cmdreference/tablehead.md
       - Td: reference/cmdreference/td.md
       - Textblock: reference/cmdreference/textblock.md
       - Tr: reference/cmdreference/tr.md

@@ -59,7 +59,7 @@ $ xts <Command> <Parameter> <Parameter> ...
 :   Run XTS N times
 
 `--quiet`
-:   Run XTS in quiet mode
+:   Run XTS in quiet mode (no output to STDOUT)
 
 `--suppressinfo`
 :   Create a reproducible document
@@ -71,5 +71,7 @@ $ xts <Command> <Parameter> <Parameter> ...
 :   Set the trace to one or more of grid, allocation
 
 `--verbose`
-:   Put more debugging information into the protocol file
+:   Put the logging output also to the terminal window (STDOUT)
+
+
 

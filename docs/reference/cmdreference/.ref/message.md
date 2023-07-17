@@ -67,7 +67,7 @@ Writes a message onto the console and to the protocol file.
 
 
 
-    `info`
+    `notice`
     :    Report an information (default).
 
 

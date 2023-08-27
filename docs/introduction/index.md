@@ -1,12 +1,12 @@
 # About XTS
 
 
-XTS is software for creating PDF files fully automatically from XML data. The data can be product data, structured texts or other content, for example.
+XTS is a non-interactive tool for creating PDF from XML data. It uses layout instructions (in a programming language) together with CSS styles to create PDF output:
 
-![XML to PDF schema](img/xmltopdf.png){: style="height:150px;"}
+![XML to PDF schema](img/schema.svg)
 
 
-The instructions on how something is to be displayed are available separately from the data. They are formulated in a programming language specially developed for this purpose.
+The idea is to have a strict separation of data and layout.
 
 ## What is it all for?
 
@@ -21,17 +21,22 @@ and many other documents, where it is important to obtain a result that is repro
 
 ## Beautiful and fully automatic
 
-XTS is a non-interactive publishing software. This means there is no graphical user interface (GUI). All instructions must be established before the publishing process and determine how the data is arranged in the PDF. The unique combination of sophisticated algorithms and programmability allows extremely flexible layouts to be created that were previously reserved for interactive desktop publishing (DTP) programs such as Adobe’s InDesign.
+XTS is a non-interactive publishing software. This means there is no graphical user interface (GUI).
+All instructions must be established before the publishing process and determine how the data is arranged in the PDF.
+The unique combination of sophisticated algorithms and programmability allows extremely flexible layouts to be created that were previously reserved for interactive desktop publishing (DTP) programs such as Adobe’s InDesign.
 
 ## Where can I get the software and how is it run?
 
-The software can be downloaded for free (see chapter Installation) and is started via the console or shell. The command to start XTS is called xts. Therewith, all functionality can be used. Parameters can be specified via the command line or a configuration file.
+The software can be downloaded for free ([see chapter Installation](../reference/installation.md)) and is started via the console or shell.
+The command to start XTS is called `xts`.
+Therewith, all functionality can be used.
+Parameters can be specified via the [command line](../manual/commandline.md) or a [configuration file](../manual/configuration.md).
 
 ```
 $ xts
 ```
 
-See the command line section for explanations on how to start XTS.
+See the [command line section](../manual/commandline.md) for explanations on how to start XTS.
 
 ## Examples
 

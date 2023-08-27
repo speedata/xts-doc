@@ -14,18 +14,20 @@ bar = 123
 Defaults:
 
 ```toml title="xts.cfg"
-data="data.xml"
-dummy=false
-jobname="xts"
-layout="layout.xml"
-loglevel="info"
+data = "data.xml"
+dummy = false
+extradir = []
+filter = ""
+jobname = "xts"
+layout = "layout.xml"
+loglevel = "info"
 mode = []
-quiet=false
-runs=1
-systemfonts=false
-suppressinfo=false
+quiet = false
+runs = 1
+systemfonts = false
+suppressinfo = false
 trace = []
-verbose=false
+verbose = false
 ```
 
 
@@ -37,6 +39,8 @@ Allowed keys:
 | data        | [string](https://toml.io/en/v1.0.0#string)      | The name of the data file.                                                   |
 | layout      | [string](https://toml.io/en/v1.0.0#string)      | The name of the layout file.                                                 |
 | dummy       | [boolean](https://toml.io/en/v1.0.0#boolean)    | Ignore data file and use `<data />` as the input XML.                        |
+| extradir    | [string array](https://toml.io/en/v1.0.0#array) | Add these directories to the recursive search path                           |
+| filter      | [string](https://toml.io/en/v1.0.0#string)      | Run a [Lua script](luafilter.md) before the publishing run                   |
 | jobname     | [string](https://toml.io/en/v1.0.0#string)      | The output name of the PDF, protocol file and other intermediate files.      |
 | loglevel    | [string](https://toml.io/en/v1.0.0#string)      | Set the log level. One of "debug", "info", "warn", "error".                  |
 | quiet       | [boolean](https://toml.io/en/v1.0.0#boolean)    | Don't output anything, just log to the protocol file.                        |

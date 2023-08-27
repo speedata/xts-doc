@@ -187,6 +187,6 @@ Alternatively to the procedure with `<ProcessNode>` and its counterpart `<Record
 ② A table header has the property that it is repeated on every page.<br>
 ③ Within the `<ForAll>`, the attributes and child elements of each article can be accessed, just like in the example above.
 
-Tables are covered in the basics (chapter <<ch-intro-tables>>) and in more detail in <<ch-tables2,chapter 6>>.
+<!-- Tables are covered in the basics (chapter <<ch-intro-tables>>) and in more detail in <<ch-tables2,chapter 6>>. -->
 
 

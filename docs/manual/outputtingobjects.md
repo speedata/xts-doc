@@ -22,7 +22,8 @@ Here an image is loaded with the specified file name and a specified width. The 
 
 ## Grid based placement of objects
 
-The <<ch-grid,section about grids>> provides a detailed description of the design grid. Only so much should be mentioned here: The grid helps on the one hand to position the objects (easy arrangement of the objects) and on the other hand to find the right place. Grid cells are not occupied by two objects at the same time, unless you explicitly allow this.
+The [section about grids](grid.md) provides a detailed description of the design grid.
+Only so much should be mentioned here: The grid helps on the one hand to position the objects (easy arrangement of the objects) and on the other hand to find the right place. Grid cells are not occupied by two objects at the same time, unless you explicitly allow this.
 
 This is an example of grid-based output. The specifications for `row` and `column` are coordinates in the page grid, where the upper left corner is position 1,1.
 
@@ -70,21 +71,19 @@ This is a rectangular text area that is not wrapped over multiple pages. Text bl
 
 A block of text can contain one or more paragraphs.
 
-FIXME!!
 
 ~~~xml
-<Textblock style="color: blue; ">
+<Textblock>
   <Paragraph style="color: green">
     <Value>green text</Value>
   </Paragraph>
   <Paragraph>
-    <Value>this text is in blue (given by Textblock)</Value>
+    <Value>this text is in blue (given by CSS)</Value>
   </Paragraph>
 </Textblock>
 ~~~
 
-
-Further formatting options are described in the section Including Fonts and Text Formatting.
+Further formatting options are described in the [section about fonts](fonts.md).
 
 <figure markdown>
   ![blue and green text](img/textblock-paragraph.png){ width="300" }
@@ -92,7 +91,7 @@ Further formatting options are described in the section Including Fonts and Text
 </figure>
 
 
-The complete description of `<Textblock>` can be found in the reference (section Text block).
+The complete description of `<Textblock>` can be found in the reference ([section Textblock](../reference/cmdreference/textblock.md)).
 
 
 ## Introduction to tables
@@ -136,7 +135,7 @@ A practical feature of tables is that they can run over several pages, even with
 The table cells can contain text, images, barcodes, etc.; in other words, anything that can also be contained in `<PlaceObject>'.
 Individual cells are never wrapped to multiple pages, i.e. they are set as a rectangular box, even if the contents would allow wrapping (e.g. texts or tables).
 
-A separate chapter is devoted to the topic of tables <<ch-tables2,a separate chapter>>.
+A separate chapter is devoted to the topic of tables (TBD).
 
 ## Images
 
@@ -151,11 +150,11 @@ Including images is, as already shown at the beginning, very easy. The command f
 
 Images can be in the formats PDF, JPEG and PNG and can be integrated. All other formats such as Tiff or SVG must be converted first.
 
-The command for embedding images is very powerful and is described in detail in a separate section (<<ch-images>>). The <<cmd-image,reference>> contains a short description of all possibilities.
+The command for embedding images is very powerful and is described in detail in a separate section (TBD). The [reference](../reference/cmdreference/image.md)  contains a short description of all possibilities.
 
 ## Rectangular areas (`<Box>`)
 
-Rectangular surfaces are created with the command <Box>.
+Rectangular surfaces are created with the command `<Box>`.
 
 ~~~xml
 <PlaceObject>
@@ -170,7 +169,7 @@ Rectangular surfaces are created with the command <Box>.
 
 
 Boxes are often used for colored areas behind a text or table.
-In this case the allocation of the raster cells must be switched off (`allocate="no"` at `<PlaceObject>`), otherwise a warning will be issued because of the double allocation of the area in the PDF (see section <<ch-grid>>).
+In this case the allocation of the raster cells must be switched off (`allocate="no"` at `<PlaceObject>`), otherwise a warning will be issued because of the double allocation of the area in the PDF (see section [grid](grid.md)).
 An example for the use of boxes as background can be found in the section about grip marks.
 There, the parameter bleed is also explained, which is used to enlarge the box in one or more directions, if they are located at the page margin.
 

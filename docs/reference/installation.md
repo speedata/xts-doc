@@ -22,3 +22,9 @@
 
     The xts command is now in the `bin/` directory.
 
+    Requirements for building from source:
+
+    * Go version 1.21 (or later)
+    * Ruby and rake. These are not strictly necessary, if you want to avoid rake, check out the `Rakefile` and run the go build command listed in the `task :build do` section.
+
+

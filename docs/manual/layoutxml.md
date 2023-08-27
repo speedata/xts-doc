@@ -34,7 +34,7 @@ layoutschema-de.xsd
 layoutschema-en.xsd
 ~~~
 
-for XSD, depending on the desired language of the documentation. Further information on the schema can be found in the chapter <<ch-schemavalidation>> and in the appendix <<ch-appendix-schema-assigning>>.
+for XSD, depending on the desired language of the documentation. Further information on the schema can be found in the [section about the Schema](assignschema/index.md).
 
 ##  Namespace of the layout ruleset
 

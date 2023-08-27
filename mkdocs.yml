@@ -30,8 +30,13 @@ nav:
     - Programming:
       - Introduction: manual/programming/index.md
       - Functions: manual/programming/functions.md
+    - Preprocessing / Lua filter: manual/luafilter.md
     - Command line: manual/commandline.md
     - Configuration file: manual/configuration.md
+    - Assigning a Schema to the Layout XML:
+      - Overview: manual/assignschema/index.md
+      - Visual Studio Code: manual/assignschema/vscode.md
+      - Oxygen XML: manual/assignschema/oxygenxml.md
   - Reference:
     - Defaults: reference/defaults.md
     - Installation: reference/installation.md

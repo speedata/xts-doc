@@ -43,8 +43,11 @@ $ xts <Command> <Parameter> <Parameter> ...
 `--dumpoutput=FILENAME`
 :   Complete XML dump of generated PDF file
 
+`--extradir=DIR`
+:   Additional directory for file search
+
 `--filter=NAME`
-:   Run Lua process before the publishing run
+:   Run [Lua process](luafilter.md) before the publishing run
 
 `--jobname=NAME`
 :   The name of the resulting PDF file (without extension), default is 'xts'

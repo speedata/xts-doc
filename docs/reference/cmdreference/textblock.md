@@ -5,3 +5,6 @@ title: Textblock
 
 
 ## See also
+
+[Outputting objects](../../manual/outputtingobjects.md#text-block)
+

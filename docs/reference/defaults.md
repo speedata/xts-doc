@@ -10,22 +10,22 @@ These font faces are predefined:
 ~~~css
 @font-face {
     font-family: "monospace";
-    src: url("CamingoCode-Regular.ttf");
+    src: url("CamingoCode Regular.ttf");
 }
 @font-face {
     font-family: "monospace";
-    src: url("CamingoCode-Bold.ttf");
+    src: url("CamingoCode Bold.ttf");
     font-weight: bold;
 }
 @font-face {
     font-family: "monospace";
-    src: url("CamingoCode-BoldItalic.ttf");
+    src: url("CamingoCode BoldItalic.ttf");
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: "monospace";
-    src: url("CamingoCode-Italic.ttf");
+    src: url("CamingoCode Italic.ttf");
     font-style: italic;
 }
 
@@ -75,18 +75,18 @@ These font faces are predefined:
 The pre-installed fonts can be accessed as `local()` fonts:
 
 ~~~
- src: local("CamingoCode-Regular")
- src: local("CamingoCode-Bold")
- src: local("CamingoCode-BoldItalic")
- src: local("CamingoCode-Italic")
- src: local("CrimsonPro-Regular")
- src: local("CrimsonPro-Bold")
- src: local("CrimsonPro-BoldItalic")
- src: local("CrimsonPro-Italic")
- src: local("TeXGyreHeros-Regular")
- src: local("TeXGyreHeros-Bold")
- src: local("TeXGyreHeros-BoldItalic")
- src: local("TeXGyreHeros-Italic")
+ src: local("CamingoCode Regular")
+ src: local("CamingoCode Bold")
+ src: local("CamingoCode BoldItalic")
+ src: local("CamingoCode Italic")
+ src: local("CrimsonPro Regular")
+ src: local("CrimsonPro Bold")
+ src: local("CrimsonPro BoldItalic")
+ src: local("CrimsonPro Italic")
+ src: local("TeXGyreHeros Regular")
+ src: local("TeXGyreHeros Bold")
+ src: local("TeXGyreHeros BoldItalic")
+ src: local("TeXGyreHeros Italic")
 ~~~
 
 

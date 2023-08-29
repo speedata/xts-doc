@@ -72,16 +72,25 @@ This is a rectangular text area that is not wrapped over multiple pages. Text bl
 A block of text can contain one or more paragraphs.
 
 
-~~~xml
-<Textblock>
-  <Paragraph style="color: green">
-    <Value>green text</Value>
-  </Paragraph>
-  <Paragraph>
-    <Value>this text is in blue (given by CSS)</Value>
-  </Paragraph>
-</Textblock>
-~~~
+=== "`layout.xml`"
+    ~~~xml
+    <Textblock>
+      <Paragraph style="color: green">
+        <Value>green text</Value>
+      </Paragraph>
+      <Paragraph>
+        <Value>this text is in blue (given by CSS)</Value>
+      </Paragraph>
+    </Textblock>
+    ~~~
+=== "CSS"
+    ~~~css
+    p {
+      color: blue;
+    }
+    ~~~
+
+
 
 Further formatting options are described in the [section about fonts](fonts.md).
 
